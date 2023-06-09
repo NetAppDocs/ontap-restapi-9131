@@ -192,6 +192,14 @@ paths:
         filename: patch-application-consistency-groups-.html
         subcategory: Manage application consistency groups
         explorer: false
+  "/application/consistency-groups/{consistency_group.uuid}/metrics":
+   get:
+      x-doc:
+        title: Retrieve historical performance metrics of a consistency group
+        category: application
+        filename: get-application-consistency-groups-metrics.html
+        subcategory: Retrieve metrics of a consistency group
+        explorer: false
   "/application/templates":
     get:
       x-doc:
