@@ -892,6 +892,22 @@ paths:
         filename: patch-cluster-web.html
         subcategory: View and update cluster web configurations
         explorer: false
+  "/resource-tags":
+    get:
+      x-doc:
+        title: Retrieve currently used resource tags
+        category: cluster
+        filename: get-resource-tags.html
+        subcategory: Retrieve resource tags
+        explorer: false
+  "/resource-tags/{value}":
+    get:
+      x-doc:
+        title: Retrieve a specific resource tag
+        category: cluster
+        filename: get-resource-tags-value.html
+        subcategory: Retrieve resource tags
+        explorer: false
   "/name-services/cache/group-membership/settings":
     get:
       x-doc:
