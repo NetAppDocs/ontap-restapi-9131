@@ -908,6 +908,36 @@ paths:
         filename: get-resource-tags-value.html
         subcategory: Retrieve resource tags
         explorer: false
+  "/resource-tags/{resource_tag.value}/resources":
+    get:
+      x-doc:
+        title: Retrieve resources for a tag
+        category: cluster
+        filename: get-resource-tags-resources.html
+        subcategory: Manage resource tag resources
+        explorer: false
+    post:
+      x-doc:
+        title: Create a tag for a resource
+        category: cluster
+        filename: post-resource-tags-resource.html
+        subcategory: Manage resource tag resources
+        explorer: false
+  "/resource-tags/{resource_tag.value}/resources/{href}":
+    get:
+      x-doc:
+        title: Retrieve a resource for a tag
+        category: cluster
+        filename: get-resource-tags-resources-href.html
+        subcategory: Manage resource tag resources
+        explorer: false
+    delete:
+      x-doc:
+        title: Delete a tag for a resource
+        category: cluster
+        filename: delete-resource-tags-resources-href.html
+        subcategory: Manage resource tag resources
+        explorer: false
   "/name-services/cache/group-membership/settings":
     get:
       x-doc:
@@ -1053,7 +1083,7 @@ paths:
         filename: post-name-services-dns.html
         subcategory: Manage DNS configurations
         explorer: false
-  "/name-services/dns/{svm.uuid}":
+  "/name-services/dns/{uuid}":
     delete:
       x-doc:
         title: Delete DNS domain configuration  
@@ -6883,6 +6913,44 @@ paths:
         filename: get-support-ems-messages.html
         subcategory: EMS event catalog
         explorer: false
+  "/support/ems/role-configs":
+    get:
+      x-doc:
+        title: Retrieve role configurations
+        category: support
+        filename: get-support-ems-role-configs.html
+        subcategory: View and create EMS role configurations
+        explorer: false
+    post:
+      x-doc:
+        title: Create role configurations
+        category: support
+        filename: post-support-ems-role-configs.html
+        subcategory: View and create EMS role configurations
+        explorer: false
+  "/support/ems/role-configs/{access_control_role.name}":
+    get:
+      x-doc:
+        title: Retrieve EMS role-based configurations
+        category: support
+        filename: get-support-ems-role-configs.html
+        subcategory: View and create EMS role configurations
+        explorer: false
+    patch:
+      x-doc:
+        title: Update EMS role-based configurations
+        category: support
+        filename: post-support-ems-role-configs.html
+        subcategory: View and create EMS role configurations
+        explorer: false
+    delete:
+      x-doc:
+        title: Delete EMS role-based configurations
+        category: support
+        filename: post-support-ems-role-configs.html
+        subcategory: View and create EMS role configurations
+        explorer: false
+  
   "/support/snmp":
     get:
       x-doc:
