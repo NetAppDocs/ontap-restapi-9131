@@ -938,6 +938,7 @@ paths:
         filename: delete-resource-tags-resources-href.html
         subcategory: Manage resource tag resources
         explorer: false
+  
   "/name-services/cache/group-membership/settings":
     get:
       x-doc:
@@ -3705,6 +3706,28 @@ paths:
         filename: patch-protocols-s3-services-users-.html
         subcategory: Manage S3 service users
         explorer: false
+  "/protocols/s3/services/{svm.uuid}/buckets/{s3_bucket.uuid}/rules/{name}":
+    delete:
+      x-doc:
+        title: Delete 
+        category: Object-store
+        filename: delete-protocols-bucket-rules-.html
+        subcategory: Manage all S3 lifecycle management rules
+        explorer: false
+    get:
+      x-doc:
+        title: Create an FC protocol service
+        category: Object-store
+        filename: get-protocols-bucket-rules-.html
+        subcategory: Manage all S3 lifecycle management rules
+        explorer: false
+    patch:
+      x-doc:
+        title: Create an FC protocol service
+        category: Object-store
+        filename: patch-protocols-bucket-rules-.html
+        subcategory: Manage all S3 lifecycle management rules
+        explorer: false
   "/protocols/san/fcp/services":
     get:
       x-doc:
@@ -4966,13 +4989,21 @@ paths:
         filename: get-security-key-managers-keys-key-ids-.html
         subcategory: View security key managers
         explorer: false
+  "/security/key-managers/{security_key_manager.uuid}/restore":
+    post:
+      x-doc:
+        title: Retrieve and restore unrestored keys
+        category: security
+        filename: get-security-key-managers-keys-key-ids-.html
+        subcategory: View security key managers
+        explorer: false
   "/security/key-managers/{source.uuid}/migrate":
     post:
       x-doc:
         title: Migrate SVM keys between security key managers
         category: security
         filename: post-security-key-managers-migrate.html
-        subcategory: 
+        subcategory: Manage key managers
         explorer: false
   "/security/key-managers/{uuid}":
     delete:
@@ -5062,6 +5093,43 @@ paths:
         category: security
         filename: patch-security-login-messages-.html
         subcategory: View and update login message configuration
+        explorer: false
+  "/security/login/totps":
+   get:
+      x-doc:
+        title: Retrieve TOTP profiles
+        category: security
+        filename: get-security-login-totp-.html
+        subcategory: Manage TOTP profiles
+        explorer: false
+   post:
+      x-doc:
+        title: Create a TOTP profile
+        category: security
+        filename: post-security-login-totp-.html
+        subcategory: Manage TOTP profiles
+        explorer: false
+  "/security/login/totps/{owner.uuid}/{account.name}":
+   delete:
+      x-doc:
+        title: Delete a TOTP profile for a user account
+        category: security
+        filename: delete-security-login-messages-.html
+        subcategory: Manage TOTP profile for a specific user account
+        explorer: false
+   get:
+      x-doc:
+        title: Retrieve TOTP profile for an user account
+        category: security
+        filename: get-security-login-messages-.html
+        subcategory: Manage TOTP profile for a specific user account
+        explorer: false
+   patch:
+      x-doc:
+        title: Update a TOTP profile for a user account
+        category: security
+        filename: patch-security-login-messages-.html
+        subcategory: Manage TOTP profile for a specific user account
         explorer: false
   "/security/multi-admin-verify":
     get:
@@ -6940,14 +7008,14 @@ paths:
       x-doc:
         title: Update EMS role-based configurations
         category: support
-        filename: post-support-ems-role-configs.html
+        filename: patch-support-ems-role-configs.html
         subcategory: View and create EMS role configurations
         explorer: false
     delete:
       x-doc:
         title: Delete EMS role-based configurations
         category: support
-        filename: post-support-ems-role-configs.html
+        filename: delete-support-ems-role-configs.html
         subcategory: View and create EMS role configurations
         explorer: false
   
