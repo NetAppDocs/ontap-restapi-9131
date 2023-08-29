@@ -5009,7 +5009,7 @@ paths:
       x-doc:
         title: Retrieve and restore unrestored keys
         category: security
-        filename: get-security-key-managers-keys-key-ids-.html
+        filename: post-security-key-managers-keys-key-ids-res.html
         subcategory: View security key managers
         explorer: false
   "/security/key-managers/{source.uuid}/migrate":
@@ -5018,7 +5018,7 @@ paths:
         title: Migrate SVM keys between security key managers
         category: security
         filename: post-security-key-managers-migrate.html
-        subcategory: Manage key managers
+        subcategory: 
         explorer: false
   "/security/key-managers/{uuid}":
     delete:
@@ -5026,21 +5026,21 @@ paths:
         title: Delete key managers
         category: security
         filename: delete-security-key-managers-.html
-        subcategory: Manage key managers
+        subcategory: 
         explorer: false
     get:
       x-doc:
         title: Retrieve key managers
         category: security
         filename: get-security-key-managers-.html
-        subcategory: Manage key managers
+        subcategory: 
         explorer: false
     patch:
       x-doc:
         title: Update key managers
         category: security
         filename: patch-security-key-managers-.html
-        subcategory: Manage key managers
+        subcategory: 
         explorer: false
   "/security/key-managers/{uuid}/key-servers":
     get:
@@ -5048,7 +5048,7 @@ paths:
         title: List key servers configured in an external key manager
         category: security
         filename: get-security-key-managers-key-servers.html
-        subcategory: Manage security key managers
+        subcategory: 
         explorer: false
     post:
       x-doc:
@@ -5093,6 +5093,7 @@ paths:
         title: Retrieve login banner and messages of the day
         category: security
         filename: get-security-login-messages.html
+        subcategory: View and update login message configuration
         explorer: false
   "/security/login/messages/{uuid}":
     get:
