@@ -3261,7 +3261,7 @@ paths:
   "/protocols/nfs/services":
     get:
       x-doc:
-        title: Retrieves NFS configuration for SVMs
+        title: Retrieve NFS configuration for SVMs
         category: NAS
         filename: get-protocols-nfs-services.html
         subcategory: Manage NFS services
@@ -4066,14 +4066,14 @@ paths:
         title: Retrieve portsets
         category: SAN
         filename: get-protocols-san-portsets.html
-        subcategory: Manage SAN portSets
+        subcategory: Manage SAN portsets
         explorer: false
     post:
       x-doc:
         title: Create a portset
         category: SAN
         filename: post-protocols-san-portsets.html
-        subcategory: Manage SAN portSets
+        subcategory: Manage SAN portsets
         explorer: false
   "/protocols/san/portsets/{portset.uuid}/interfaces":
     get:
@@ -4081,14 +4081,14 @@ paths:
         title: Retrieve portSet network interfaces
         category: SAN
         filename: get-protocols-san-portsets-interfaces.html
-        subcategory: Manage SAN portSets
+        subcategory: Manage SAN portsets
         explorer: false
     post:
       x-doc:
         title: Add portset network interfaces
         category: SAN
         filename: post-protocols-san-portsets-interfaces.html
-        subcategory: Manage SAN portSets
+        subcategory: Manage SAN portsets
         explorer: false
   "/protocols/san/portsets/{portset.uuid}/interfaces/{uuid}":
     delete:
@@ -4096,14 +4096,14 @@ paths:
         title: Delete portset network interfaces
         category: SAN
         filename: delete-protocols-san-portsets-interfaces-.html
-        subcategory: Manage SAN portSets
+        subcategory: Manage SAN portsets
         explorer: false
     get:
       x-doc:
         title: Retrieve specific portset network interfaces
         category: SAN
         filename: get-protocols-san-portsets-interfaces-.html
-        subcategory: Manage SAN portSets
+        subcategory: Manage SAN portsets
         explorer: false
   "/protocols/san/portsets/{uuid}":
     delete:
@@ -4111,14 +4111,14 @@ paths:
         title: Delete a portset
         category: SAN
         filename: delete-protocols-san-portsets-.html
-        subcategory: Manage SAN portSets
+        subcategory: Manage SAN portsets
         explorer: false
     get:
       x-doc:
         title: Retrieve a portset
         category: SAN
         filename: get-protocols-san-portsets-.html
-        subcategory: Manage SAN portSets
+        subcategory: Manage SAN portsets
         explorer: false
   "/protocols/san/vvol-bindings":
     get:
