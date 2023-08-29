@@ -3706,27 +3706,42 @@ paths:
         filename: patch-protocols-s3-services-users-.html
         subcategory: Manage S3 service users
         explorer: false
-  "/protocols/s3/services/{svm.uuid}/buckets/{s3_bucket.uuid}/rules/{name}":
-    delete:
+  "/protocols/s3/services/{svm.uuid}/buckets/{s3_bucket.uuid}/rules":
+    post:
       x-doc:
-        title: Delete 
+        title: Create S3 bucket lifecycle rule configuration
         category: Object-store
-        filename: delete-protocols-bucket-rules-.html
-        subcategory: Manage all S3 lifecycle management rules
+        filename: post-protocols-bucket-rules-.html
+        subcategory: Manage S3 bucket lifecycle management rules
         explorer: false
     get:
       x-doc:
-        title: Create an FC protocol service
+        title: Retrieve S3 lifecycle rules for a bucket
         category: Object-store
         filename: get-protocols-bucket-rules-.html
-        subcategory: Manage all S3 lifecycle management rules
+        subcategory: Manage S3 bucket lifecycle management rules
+        explorer: false
+  "/protocols/s3/services/{svm.uuid}/buckets/{s3_bucket.uuid}/rules/{name}":
+    delete:
+      x-doc:
+        title: Delete S3 rule configuration
+        category: Object-store
+        filename: delete-protocols-bucket-rules-name.html
+        subcategory: Manage S3 bucket lifecycle management rules
+        explorer: false
+    get:
+      x-doc:
+        title: Retrieve S3 lifecycle rules for a bucket by name
+        category: Object-store
+        filename: get-protocols-bucket-rules-name.html
+        subcategory: Manage S3 bucket lifecycle management rules
         explorer: false
     patch:
       x-doc:
-        title: Create an FC protocol service
+        title: Update S3 rule configuration
         category: Object-store
-        filename: patch-protocols-bucket-rules-.html
-        subcategory: Manage all S3 lifecycle management rules
+        filename: patch-protocols-bucket-rules-name.html
+        subcategory: Manage S3 bucket lifecycle management rules
         explorer: false
   "/protocols/san/fcp/services":
     get:
