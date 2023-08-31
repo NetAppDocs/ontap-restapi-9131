@@ -192,13 +192,21 @@ paths:
         filename: patch-application-consistency-groups-.html
         subcategory: Manage application consistency groups
         explorer: false
+  "/application/consistency-groups/{consistency_group.uuid}/metrics":
+   get:
+      x-doc:
+        title: Retrieve historical performance metrics of a consistency group
+        category: application
+        filename: get-application-consistency-groups-metrics.html
+        subcategory: Retrieve metrics of a consistency group
+        explorer: false
   "/application/templates":
     get:
       x-doc:
         title: Retrieve application templates
         category: application
         filename: get-application-templates.html
-        subcategory: View application templates
+        subcategory: 
         explorer: false
   "/application/templates/{name}":
     get:
@@ -206,7 +214,7 @@ paths:
         title: Retrieve an application template
         category: application
         filename: get-application-templates-.html
-        subcategory: View application templates
+        subcategory: 
         explorer: false
   "/cloud/targets":
     get:
@@ -792,7 +800,7 @@ paths:
         title: Retrieve environment sensors
         category: cluster
         filename: get-cluster-sensors.html
-        subcategory: Retrieve cluster sensors
+        subcategory: 
         explorer: false
   "/cluster/sensors/{node.uuid}/{index}":
     get:
@@ -800,6 +808,7 @@ paths:
         title: Retrieve environment sensors for a node
         category: cluster
         filename: get-cluster-sensors-.html
+        subcategory: Manage environment sensors
         explorer: false
   "/cluster/software":
     get:
@@ -884,6 +893,53 @@ paths:
         filename: patch-cluster-web.html
         subcategory: View and update cluster web configurations
         explorer: false
+  "/resource-tags":
+    get:
+      x-doc:
+        title: Retrieve currently used resource tags
+        category: cluster
+        filename: get-resource-tags.html
+        subcategory: Retrieve resource tags
+        explorer: false
+  "/resource-tags/{value}":
+    get:
+      x-doc:
+        title: Retrieve a specific resource tag
+        category: cluster
+        filename: get-resource-tags-value.html
+        subcategory: Retrieve resource tags
+        explorer: false
+  "/resource-tags/{resource_tag.value}/resources":
+    get:
+      x-doc:
+        title: Retrieve resources for a tag
+        category: cluster
+        filename: get-resource-tags-resources.html
+        subcategory: Manage resource tags 
+        explorer: false
+    post:
+      x-doc:
+        title: Create a tag for a resource
+        category: cluster
+        filename: post-resource-tags-resource.html
+        subcategory: Manage resource tags 
+        explorer: false
+  "/resource-tags/{resource_tag.value}/resources/{href}":
+    get:
+      x-doc:
+        title: Retrieve a resource for a tag
+        category: cluster
+        filename: get-resource-tags-resources-href.html
+        subcategory: Manage resource tags 
+        explorer: false
+    delete:
+      x-doc:
+        title: Delete a tag for a resource
+        category: cluster
+        filename: delete-resource-tags-resources-href.html
+        subcategory: Manage resource tags
+        explorer: false
+  
   "/name-services/cache/group-membership/settings":
     get:
       x-doc:
@@ -1029,7 +1085,7 @@ paths:
         filename: post-name-services-dns.html
         subcategory: Manage DNS configurations
         explorer: false
-  "/name-services/dns/{svm.uuid}":
+  "/name-services/dns/{uuid}":
     delete:
       x-doc:
         title: Delete DNS domain configuration  
@@ -1549,7 +1605,7 @@ paths:
   "/network/fc/interfaces":
     get:
       x-doc:
-        title: Retrieves FC interfaces
+        title: Retrieve FC interfaces
         category: networking
         filename: get-network-fc-interfaces.html
         subcategory: Manage FC network interfaces
@@ -2087,7 +2143,14 @@ paths:
         title: Retrieve CIFS domain-related information for an SVM
         category: NAS
         filename: get-protocols-cifs-domains-.html
-        subcategory: View CIFS domain-related information (specific SVM)
+        subcategory: View and update CIFS domain-related information (specific SVM)
+        explorer: false
+    patch:
+      x-doc:
+        title: Update CIFS domain-related information for an SVM
+        category: NAS
+        filename: patch-protocols-cifs-domains-.html
+        subcategory: View and update CIFS domain-related information (specific SVM)
         explorer: false
   "/protocols/cifs/domains/{svm.uuid}/preferred-domain-controllers":
     get:
@@ -2360,7 +2423,7 @@ paths:
   "/protocols/cifs/netbios":
     get:
       x-doc:
-        title: Retrieve NetBios information
+        title: Retrieve NetBIOS information
         category: NAS
         filename: get-protocols-cifs-netbios.html
         subcategory: View NetBIOS information
@@ -3198,7 +3261,7 @@ paths:
   "/protocols/nfs/services":
     get:
       x-doc:
-        title: Retrieves NFS configuration for SVMs
+        title: Retrieve NFS configuration for SVMs
         category: NAS
         filename: get-protocols-nfs-services.html
         subcategory: Manage NFS services
@@ -3651,6 +3714,43 @@ paths:
         filename: patch-protocols-s3-services-users-.html
         subcategory: Manage S3 service users
         explorer: false
+  "/protocols/s3/services/{svm.uuid}/buckets/{s3_bucket.uuid}/rules":
+    post:
+      x-doc:
+        title: Create S3 bucket lifecycle rule configuration
+        category: Object-store
+        filename: post-protocols-bucket-rules-.html
+        subcategory: Manage S3 bucket lifecycle management rules
+        explorer: false
+    get:
+      x-doc:
+        title: Retrieve S3 lifecycle rules for a bucket
+        category: Object-store
+        filename: get-protocols-bucket-rules-.html
+        subcategory: Manage S3 bucket lifecycle management rules
+        explorer: false
+  "/protocols/s3/services/{svm.uuid}/buckets/{s3_bucket.uuid}/rules/{name}":
+    delete:
+      x-doc:
+        title: Delete S3 rule configuration
+        category: Object-store
+        filename: delete-protocols-bucket-rules-name.html
+        subcategory: Manage S3 bucket lifecycle management rules
+        explorer: false
+    get:
+      x-doc:
+        title: Retrieve S3 lifecycle rules for a bucket by name
+        category: Object-store
+        filename: get-protocols-bucket-rules-name.html
+        subcategory: Manage S3 bucket lifecycle management rules
+        explorer: false
+    patch:
+      x-doc:
+        title: Update S3 rule configuration
+        category: Object-store
+        filename: patch-protocols-bucket-rules-name.html
+        subcategory: Manage S3 bucket lifecycle management rules
+        explorer: false
   "/protocols/san/fcp/services":
     get:
       x-doc:
@@ -3703,14 +3803,14 @@ paths:
         title: Retrieve initiator groups
         category: SAN
         filename: get-protocols-san-igroups.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     post:
       x-doc:
         title: Create an initiator group
         category: SAN
         filename: post-protocols-san-igroups.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/igroups/{igroup.uuid}/igroups":
     get:
@@ -3718,14 +3818,14 @@ paths:
         title: Retrieve nested initiator groups of an initiator group
         category: SAN
         filename: get-protocols-san-igroups-igroups.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     post:
       x-doc:
         title: Add nested initiator groups to an initiator group
         category: SAN
         filename: post-protocols-san-igroups-igroups.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/igroups/{igroup.uuid}/igroups/{uuid}":
     delete:
@@ -3733,14 +3833,14 @@ paths:
         title: Remove a nested initiator group from an initiator group
         category: SAN
         filename: delete-protocols-san-igroups-igroups-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     get:
       x-doc:
         title: Retrieve a nested initiator group of an initiator group
         category: SAN
         filename: get-protocols-san-igroups-igroups-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/igroups/{igroup.uuid}/initiators":
     get:
@@ -3748,14 +3848,14 @@ paths:
         title: Retrieve initiators of an initiator group
         category: SAN
         filename: get-protocols-san-igroups-initiators.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     post:
       x-doc:
         title: Add initiators to an initiator group
         category: SAN
         filename: post-protocols-san-igroups-initiators.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/igroups/{igroup.uuid}/initiators/{name}":
     delete:
@@ -3763,21 +3863,21 @@ paths:
         title: Delete an initiator from an initiator group
         category: SAN
         filename: delete-protocols-san-igroups-initiators-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     get:
       x-doc:
         title: Retrieve an initiator 
         category: SAN
         filename: get-protocols-san-igroups-initiators-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     patch:
       x-doc:
         title: Update an initiator 
         category: SAN
         filename: patch-protocols-san-igroups-initiators-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/igroups/{uuid}":
     delete:
@@ -3785,21 +3885,21 @@ paths:
         title: Delete an initiator group
         category: SAN
         filename: delete-protocols-san-igroups-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     get:
       x-doc:
         title: Retrieve an initiator group
         category: SAN
         filename: get-protocols-san-igroups-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     patch:
       x-doc:
         title: Update an initiator group
         category: SAN
         filename: patch-protocols-san-igroups-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/iscsi/credentials":
     get:
@@ -3966,29 +4066,29 @@ paths:
         title: Retrieve portsets
         category: SAN
         filename: get-protocols-san-portsets.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
     post:
       x-doc:
         title: Create a portset
         category: SAN
         filename: post-protocols-san-portsets.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
   "/protocols/san/portsets/{portset.uuid}/interfaces":
     get:
       x-doc:
-        title: Retrieve portset network interfaces
+        title: Retrieve portSet network interfaces
         category: SAN
         filename: get-protocols-san-portsets-interfaces.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
     post:
       x-doc:
         title: Add portset network interfaces
         category: SAN
         filename: post-protocols-san-portsets-interfaces.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
   "/protocols/san/portsets/{portset.uuid}/interfaces/{uuid}":
     delete:
@@ -3996,14 +4096,14 @@ paths:
         title: Delete portset network interfaces
         category: SAN
         filename: delete-protocols-san-portsets-interfaces-.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
     get:
       x-doc:
         title: Retrieve specific portset network interfaces
         category: SAN
         filename: get-protocols-san-portsets-interfaces-.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
   "/protocols/san/portsets/{uuid}":
     delete:
@@ -4011,14 +4111,14 @@ paths:
         title: Delete a portset
         category: SAN
         filename: delete-protocols-san-portsets-.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
     get:
       x-doc:
         title: Retrieve a portset
         category: SAN
         filename: get-protocols-san-portsets-.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
   "/protocols/san/vvol-bindings":
     get:
@@ -4912,6 +5012,14 @@ paths:
         filename: get-security-key-managers-keys-key-ids-.html
         subcategory: View security key managers
         explorer: false
+  "/security/key-managers/{security_key_manager.uuid}/restore":
+    post:
+      x-doc:
+        title: Retrieve and restore unrestored keys
+        category: security
+        filename: post-security-key-managers-keys-key-ids-res.html
+        subcategory: View security key managers
+        explorer: false
   "/security/key-managers/{source.uuid}/migrate":
     post:
       x-doc:
@@ -4926,21 +5034,21 @@ paths:
         title: Delete key managers
         category: security
         filename: delete-security-key-managers-.html
-        subcategory: Manage key managers
+        subcategory: 
         explorer: false
     get:
       x-doc:
         title: Retrieve key managers
         category: security
         filename: get-security-key-managers-.html
-        subcategory: Manage key managers
+        subcategory: 
         explorer: false
     patch:
       x-doc:
         title: Update key managers
         category: security
         filename: patch-security-key-managers-.html
-        subcategory: Manage key managers
+        subcategory: 
         explorer: false
   "/security/key-managers/{uuid}/key-servers":
     get:
@@ -4948,14 +5056,14 @@ paths:
         title: List key servers configured in an external key manager
         category: security
         filename: get-security-key-managers-key-servers.html
-        subcategory: Manage security key managers
+        subcategory: 
         explorer: false
     post:
       x-doc:
         title: Add primary key servers to an external key manager
         category: security
         filename: post-security-key-managers-key-servers.html
-        subcategory: Manage key manager servers
+        subcategory: 
         explorer: false
   "/security/key-managers/{uuid}/key-servers/{server}":
     delete:
@@ -4963,21 +5071,21 @@ paths:
         title: Delete a primary key server
         category: security
         filename: delete-security-key-managers-key-servers-.html
-        subcategory: Manage key manager servers
+        subcategory: 
         explorer: false
     get:
       x-doc:
         title: Retrieve key servers configured in an external key manager
         category: security
         filename: get-security-key-managers-key-servers-.html
-        subcategory: Manage key manager servers
+        subcategory: 
         explorer: false
     patch:
       x-doc:
         title: Update a primary key server
         category: security
         filename: patch-security-key-managers-key-servers-.html
-        subcategory: Manage key manager servers
+        subcategory: 
         explorer: false
   "/security/key-stores":
     get:
@@ -4993,6 +5101,7 @@ paths:
         title: Retrieve login banner and messages of the day
         category: security
         filename: get-security-login-messages.html
+        subcategory: View and update login message configuration
         explorer: false
   "/security/login/messages/{uuid}":
     get:
@@ -5008,6 +5117,43 @@ paths:
         category: security
         filename: patch-security-login-messages-.html
         subcategory: View and update login message configuration
+        explorer: false
+  "/security/login/totps":
+   get:
+      x-doc:
+        title: Retrieve TOTP profiles
+        category: security
+        filename: get-security-login-totp-.html
+        subcategory: Manage TOTP profiles
+        explorer: false
+   post:
+      x-doc:
+        title: Create a TOTP profile
+        category: security
+        filename: post-security-login-totp-.html
+        subcategory: Manage TOTP profiles
+        explorer: false
+  "/security/login/totps/{owner.uuid}/{account.name}":
+   delete:
+      x-doc:
+        title: Delete a TOTP profile for a user account
+        category: security
+        filename: delete-security-login-messages-.html
+        subcategory: Manage TOTP profile for a specific user account
+        explorer: false
+   get:
+      x-doc:
+        title: Retrieve TOTP profile for an user account
+        category: security
+        filename: get-security-login-messages-.html
+        subcategory: Manage TOTP profile for a specific user account
+        explorer: false
+   patch:
+      x-doc:
+        title: Update a TOTP profile for a user account
+        category: security
+        filename: patch-security-login-messages-.html
+        subcategory: Manage TOTP profile for a specific user account
         explorer: false
   "/security/multi-admin-verify":
     get:
@@ -6859,6 +7005,44 @@ paths:
         filename: get-support-ems-messages.html
         subcategory: EMS event catalog
         explorer: false
+  "/support/ems/role-configs":
+    get:
+      x-doc:
+        title: Retrieve role configurations
+        category: support
+        filename: get-support-ems-role-configs.html
+        subcategory: View and create EMS role configurations
+        explorer: false
+    post:
+      x-doc:
+        title: Create role configurations
+        category: support
+        filename: post-support-ems-role-configs.html
+        subcategory: View and create EMS role configurations
+        explorer: false
+  "/support/ems/role-configs/{access_control_role.name}":
+    get:
+      x-doc:
+        title: Retrieve EMS role-based configurations
+        category: support
+        filename: get-support-ems-role-configs.html
+        subcategory: Manage EMS role configurations
+        explorer: false
+    patch:
+      x-doc:
+        title: Update EMS role-based configurations
+        category: support
+        filename: patch-support-ems-role-configs.html
+        subcategory: Manage EMS role configurations
+        explorer: false
+    delete:
+      x-doc:
+        title: Delete EMS role-based configurations
+        category: support
+        filename: delete-support-ems-role-configs.html
+        subcategory: Manage EMS role configurations
+        explorer: false
+  
   "/support/snmp":
     get:
       x-doc:
