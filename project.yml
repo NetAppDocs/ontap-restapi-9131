@@ -13,7 +13,7 @@ settings:
     harmony_enabled: false
     lipi_enabled: false
     api_enabled: true
- versions: 
+  versions: 
   # This Repo
   - version-number: "9.13.1"
     url: /ontap-restapi-9131
