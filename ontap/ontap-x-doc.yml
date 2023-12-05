@@ -1470,7 +1470,7 @@ paths:
         title: Create a new VLAN or LAG
         category: networking
         filename: post-network-ethernet-ports.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
   "/network/ethernet/ports/{uuid}":
     delete:
@@ -1478,21 +1478,21 @@ paths:
         title: Delete a VLAN or LAG
         category: networking
         filename: delete-network-ethernet-ports-.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
     get:
       x-doc:
         title: Retrieve a physical port, VLAN, or LAG details
         category: networking
         filename: get-network-ethernet-ports-.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
     patch:
       x-doc:
         title: Update a port
         category: networking
         filename: patch-network-ethernet-ports-.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
   "/network/ethernet/ports/{uuid}/metrics":
     get:
@@ -1500,7 +1500,7 @@ paths:
         title: Retrieve historical port performance metrics
         category: networking
         filename: get-network-ethernet-ports-metrics.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
   "/network/ethernet/switch/ports":
     get:
@@ -1508,7 +1508,7 @@ paths:
         title: Retrieve Ethernet switch ports
         category: networking
         filename: get-network-ethernet-switch-ports.html
-        subcategory: Retrieve network ethernet switch ports
+        subcategory: Retrieve network Ethernet switch ports
         explorer: false
   "/network/ethernet/switch/ports/{switch}/{identity.name}/{identity.index}":
     get:
@@ -1516,7 +1516,7 @@ paths:
         title: Retrieve an Ethernet switch port
         category: networking
         filename: get-network-ethernet-switch-ports--.html
-        subcategory: Retrieve network ethernet switch ports
+        subcategory: Retrieve network Ethernet switch ports
         explorer: false
   "/network/ethernet/switches":
     get:
@@ -1524,14 +1524,14 @@ paths:
         title: Retrieve Ethernet switches attached to a chassis
         category: networking
         filename: get-network-ethernet-switches.html
-        subcategory: Manage ethernet switches
+        subcategory: Manage Ethernet switches
         explorer: false
     post:
       x-doc:
         title: Create an Ethernet switch
         category: networking
         filename: post-network-ethernet-switches.html
-        subcategory: Manage ethernet switches
+        subcategory: Manage Ethernet switches
         explorer: false
   "/network/ethernet/switches/{name}":
     delete:
@@ -1539,26 +1539,26 @@ paths:
         title: Delete an Ethernet switch
         category: networking
         filename: delete-network-ethernet-switches-.html
-        subcategory: Manage ethernet switches
+        subcategory: Manage Ethernet switches
         explorer: false
     get:
       x-doc:
         title: Retrieve Ethernet switch details
         category: networking
         filename: get-network-ethernet-switches-.html
-        subcategory: Manage ethernet switches
+        subcategory: Manage Ethernet switches
         explorer: false
     patch:
       x-doc:
         title: Update an Ethernet switch
         category: networking
         filename: patch-network-ethernet-switches-.html
-        subcategory: Manage ethernet switches
+        subcategory: Manage Ethernet switches
         explorer: false
   "/network/fc/fabrics":
     get:
       x-doc:
-        title: Retrieve fibre channel fabrics
+        title: Retrieve FC fabrics
         category: networking
         filename: get-network-fc-fabrics.html
         subcategory: Retrieve FC fabrics
@@ -1566,7 +1566,7 @@ paths:
   "/network/fc/fabrics/{fabric.name}/switches":
     get:
       x-doc:
-        title: Retrieve fibre channel fabric switches
+        title: Retrieve FC fabric switches
         category: networking
         filename: get-network-fc-fabrics-switches.html
         subcategory: Retrieve FC fabrics
@@ -1574,7 +1574,7 @@ paths:
   "/network/fc/fabrics/{fabric.name}/switches/{wwn}":
     get:
       x-doc:
-        title: Retrieve a fibre channel switch
+        title: Retrieve a FC switch
         category: networking
         filename: get-network-fc-fabrics-switches-.html
         subcategory: Retrieve FC fabrics
@@ -1582,7 +1582,7 @@ paths:
   "/network/fc/fabrics/{fabric.name}/zones":
     get:
       x-doc:
-        title: Retrieve fibre channel fabric zones
+        title: Retrieve FC fabric zones
         category: networking
         filename: get-network-fc-fabrics-zones.html
         subcategory: Retrieve FC fabrics
@@ -1590,7 +1590,7 @@ paths:
   "/network/fc/fabrics/{fabric.name}/zones/{name}":
     get:
       x-doc:
-        title: Retrieve a fibre channel fabric zone
+        title: Retrieve a FC fabric zone
         category: networking
         filename: get-network-fc-fabrics-zones-.html
         subcategory: Retrieve FC fabrics
@@ -1598,7 +1598,7 @@ paths:
   "/network/fc/fabrics/{name}":
     get:
       x-doc:
-        title: Retrieve a fibre channel fabric
+        title: Retrieve a FC fabric
         category: networking
         filename: get-network-fc-fabrics-.html
         subcategory: Retrieve FC fabrics
@@ -1728,7 +1728,7 @@ paths:
   "/network/http-proxy":
     get:
       x-doc:
-        title: Retrieve http proxy configurations for all SVMs and cluster
+        title: Retrieve HTTP proxy configurations for all SVMs and cluster
           IPspaces
         category: networking
         filename: get-network-http-proxy.html
@@ -1736,7 +1736,7 @@ paths:
         explorer: false
     post:
       x-doc:
-        title: Create an http proxy configuration for an SVM or cluster IPspace
+        title: Create an HTTP proxy configuration for an SVM or cluster IPspace
         category: networking
         filename: post-network-http-proxy.html
         subcategory: Manage HTTP proxy configuration
@@ -1744,14 +1744,14 @@ paths:
   "/network/http-proxy/{uuid}":
     delete:
       x-doc:
-        title: Delete http proxy configuration for an SVM or cluster IPspace
+        title: Delete HTTP proxy configuration for an SVM or cluster IPspace
         category: networking
         filename: delete-network-http-proxy-.html
         subcategory: Manage HTTP proxy configuration
         explorer: false
     get:
       x-doc:
-        title: Display http proxy server, port, and IPspace information for an SVM or cluster IPspace
+        title: Display HTTP proxy server, port, and IPspace information for an SVM or cluster IPspace
         category: networking
         filename: get-network-http-proxy-.html
         subcategory: Manage HTTP proxy configuration
@@ -4210,14 +4210,14 @@ paths:
         title: Retrieve a Vscan On-Access policy
         category: NAS
         filename: get-protocols-vscan-on-access-policies.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
     post:
       x-doc:
         title: Create a Vscan On-Access policy
         category: NAS
         filename: post-protocols-vscan-on-access-policies.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
   "/protocols/vscan/{svm.uuid}/on-access-policies/{name}":
     delete:
@@ -4225,21 +4225,21 @@ paths:
         title: Delete an antivirus On-Access policy configuration
         category: NAS
         filename: delete-protocols-vscan-on-access-policies-.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
     get:
       x-doc:
         title: Retrieve the Vscan On-Access policy configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-on-access-policies-.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
     patch:
       x-doc:
-        title: Manage Vscan On-Access policy configuration for an SVM
+        title: Manage Vscan On-Access policies configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-on-access-policies-.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
   "/protocols/vscan/{svm.uuid}/on-demand-policies":
     get:
@@ -4247,14 +4247,14 @@ paths:
         title: Retrieve a Vscan On-Demand policy
         category: NAS
         filename: get-protocols-vscan-on-demand-policies.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Access policie
         explorer: false
     post:
       x-doc:
         title: Create a Vscan On-Demand policy
         category: NAS
         filename: post-protocols-vscan-on-demand-policies.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
   "/protocols/vscan/{svm.uuid}/on-demand-policies/{name}":
     delete:
@@ -4262,21 +4262,21 @@ paths:
         title: Delete Vscan On-Demand configuration
         category: NAS
         filename: delete-protocols-vscan-on-demand-policies-.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
     get:
       x-doc:
         title: Retrieve Vscan On-Demand configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-on-demand-policies-.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
     patch:
       x-doc:
         title: Update Vscan On-Demand policy configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-on-demand-policies-.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
   "/protocols/vscan/{svm.uuid}/scanner-pools":
     get:
@@ -4403,7 +4403,7 @@ paths:
   "/security/audit/destinations":
     get:
       x-doc:
-        title: Define a remote syslog or splunk server to recieve audit information
+        title: Define a remote syslog or splunk server to receive audit information
         category: security
         filename: get-security-audit-destinations.html
         subcategory: Forward audit logs to syslog/splunk servers
@@ -5162,14 +5162,14 @@ paths:
         title: Retrieve multi-admin-verify configuration
         category: security
         filename: get-security-multi-admin-verify.html
-        subcategory: Verify multi-admin global setting
+        subcategory: Manage the multi-admin-verify global setting
         explorer: false
     patch:
       x-doc:
         title: Modify multi-admin-verify configuration
         category: security
         filename: patch-security-multi-admin-verify.html
-        subcategory: Verify multi-admin global setting
+        subcategory: Manage the multi-admin-verify global setting
         explorer: false
   "/security/multi-admin-verify/approval-groups":
     get:
@@ -5192,21 +5192,21 @@ paths:
         title: Delete a multi-admin-verify approval group
         category: security
         filename: delete-security-multi-admin-verify-approval-groups-.html
-        subcategory: Manage multi-admin verification approval groups
+        subcategory: Manage multi-admin-verify approval groups
         explorer: false
     get:
       x-doc:
         title: Retrieve a multi-admin-verify approval group
         category: security
         filename: get-security-multi-admin-verify-approval-groups-.html
-        subcategory: Manage multi-admin verification approval groups
+        subcategory: Manage multi-admin-verify approval groups
         explorer: false
     patch:
       x-doc:
         title: Update a multi-admin-verify approval group
         category: security
         filename: patch-security-multi-admin-verify-approval-groups-.html
-        subcategory: Manage multi-admin verification approval groups
+        subcategory: Manage multi-admin-verify approval groups
         explorer: false
   "/security/multi-admin-verify/requests":
     get:
@@ -5214,14 +5214,14 @@ paths:
         title: Retrieve multi-admin-verify requests
         category: security
         filename: get-security-multi-admin-verify-requests.html
-        subcategory: Manage multi-admin verification approval requests
+        subcategory: Manage multi-admin-verify approval requests
         explorer: false
     post:
       x-doc:
         title: Create a multi-admin-verify request
         category: security
         filename: post-security-multi-admin-verify-requests.html
-        subcategory: Manage multi-admin verification approval requests
+        subcategory: Manage multi-admin-verify approval requests
         explorer: false
   "/security/multi-admin-verify/requests/{index}":
     delete:
@@ -5229,21 +5229,21 @@ paths:
         title: Delete a multi-admin-verify request
         category: security
         filename: delete-security-multi-admin-verify-requests-.html
-        subcategory: Manage a multi-admin verification approval request
+        subcategory: Manage a multi-admin-verify approval request
         explorer: false
     get:
       x-doc:
         title: Retrieve a multi-admin-verify request
         category: security
         filename: get-security-multi-admin-verify-requests-.html
-        subcategory: Manage a multi-admin verification approval request
+        subcategory: Manage a multi-admin-verify approval request
         explorer: false
     patch:
       x-doc:
         title: Update a multi-admin-verify request
         category: security
         filename: patch-security-multi-admin-verify-requests-.html
-        subcategory: Manage a multi-admin verification approval request
+        subcategory: Manage a multi-admin-verify approval request
         explorer: false
   "/security/multi-admin-verify/rules":
     get:
@@ -5251,14 +5251,14 @@ paths:
         title: Retrieve multi-admin-verify rules
         category: security
         filename: get-security-multi-admin-verify-rules.html
-        subcategory: Manage multi-admin verification rules
+        subcategory: Manage multi-admin-verify rules
         explorer: false
     post:
       x-doc:
         title: Create a multi-admin-verify rule
         category: security
         filename: post-security-multi-admin-verify-rules.html
-        subcategory: Manage multi-admin verification rules
+        subcategory: Manage multi-admin-verify rules
         explorer: false
   "/security/multi-admin-verify/rules/{owner.uuid}/{operation}":
     delete:
@@ -5266,21 +5266,21 @@ paths:
         title: Delete a multi-admin-verify rule
         category: security
         filename: delete-security-multi-admin-verify-rules-.html
-        subcategory: Manage a multi-admin verification rule
+        subcategory: Manage a multi-admin-verify rule
         explorer: false
     get:
       x-doc:
         title: Retrieve a multi-admin-verify rule
         category: security
         filename: get-security-multi-admin-verify-rules-.html
-        subcategory: Manage a multi-admin verification rule
+        subcategory: Manage a multi-admin-verify rule
         explorer: false
     patch:
       x-doc:
         title: Update a multi-admin-verify rule
         category: security
         filename: patch-security-multi-admin-verify-rules-.html
-        subcategory: Manage a multi-admin verification rule
+        subcategory: Manage a multi-admin-verify rule
         explorer: false
   "/security/roles":
     get:
