@@ -4236,7 +4236,7 @@ paths:
         explorer: false
     patch:
       x-doc:
-        title: Manage Vscan On-Access policies configuration for an SVM
+        title: Update the Vscan On-Access policies configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-on-access-policies-.html
         subcategory: Manage Vscan On-Access policies
