@@ -4237,7 +4237,7 @@ paths:
         explorer: false
     patch:
       x-doc:
-        title: Manage Vscan On-Access policies configuration for an SVM
+        title: Update the Vscan On-Access policies configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-on-access-policies-.html
         subcategory: Manage Vscan On-Access policies
@@ -4565,7 +4565,7 @@ paths:
   "/security/authentication/password":
     post:
       x-doc:
-        title: Update a user account password
+        title: Update the user account password
         category: security
         filename: post-security-authentication-password.html
         subcategory: Update user account password
