@@ -4543,21 +4543,21 @@ paths:
         explorer: false
     get:
       x-doc:
-        title: Retrieve an SAML service provider configuration
+        title: Retrieve a SAML service provider configuration
         category: security
         filename: get-security-authentication-cluster-saml-sp.html
         subcategory: Manage SAML service
         explorer: false
     patch:
       x-doc:
-        title: Update an SAML service provider configuration
+        title: Update a SAML service provider configuration
         category: security
         filename: patch-security-authentication-cluster-saml-sp.html
         subcategory: Manage SAML service
         explorer: false
     post:
       x-doc:
-        title: Create an SAML service provider configuration
+        title: Create a SAML service provider configuration
         category: security
         filename: post-security-authentication-cluster-saml-sp.html
         subcategory: Manage SAML service
