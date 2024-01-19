@@ -7,9 +7,11 @@ lead: 'The ONTAP REST API reference provides descriptions, parameter and respons
 summary: 'The ONTAP REST API reference provides descriptions, parameter and response information, and examples for every ONTAP REST API call. The API calls are grouped by category, and each category includes an overview you can use to get started.'
 ---
 
-= ONTAP 9.13.1 REST API reference 
+= ONTAP 9.13.1 REST API reference
 :hardbreaks:
 :nofooter:
 :icons: font
 :linkattrs:
 :imagesdir: ./media/
+
+This reference is also avaialble in link:ontap/swagger-ui/index.html[Swagger UI format].
