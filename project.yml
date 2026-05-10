@@ -7,6 +7,9 @@ settings:
     avatars_enabled: false
     lipi_enabled: false
     api_enabled: true
+    api_standardize: false
+    api_input: ontap
+    api_preserve_adoc: true
   prod:
     pdf_enabled: true
     avatars_enabled: false
