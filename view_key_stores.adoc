@@ -1,0 +1,70 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'view_key_stores.html'
+summary: 'View key stores'
+---
+
+= View key stores
+
+
+
+:doctype: book
+
+== Overview
+
+A keystore describes a key-manager, specifically the type of key-manager.
+
+== Examples
+
+=== Retrieving information for all configured key managers
+
+The following example shows how to retrieve information about all configured key managers.
+
+```
+
+= The API:
+
+GET /api/security/key-stores
+
+= The call:
+
+curl -X GET 'https://+++<mgmt-ip>+++/api/security/key-stores?fields=*' -H 'accept: application/hal+json'+++</mgmt-ip>+++
+
+= The response:
+
+{
+"records": [
+    {
+    "uuid": "33421d82-0a8d-11ec-ae88-005056bb5955",
+    "keystore": {
+        "type": "akv"
+    },
+    "_links": {
+        "self": {
+        "href": "/api/security/key-stores/33421d82-0a8d-11ec-ae88-005056bb5955/akv"
+        }
+    }
+},
+{
+    "uuid": "46a0b20a-0a8d-11ec-ae88-005056bb5955",
+    "keystore": {
+        "type": "okm"
+},
+    "_links": {
+        "self": {
+        "href": "/api/security/key-stores/46a0b20a-0a8d-11ec-ae88-005056bb5955/okm"
+        }
+    }
+    }
+],
+"num_records": 2,
+"_links": {
+    "self": {
+    "href": "/api/security/key-stores"
+    }
+}
+}
+
+

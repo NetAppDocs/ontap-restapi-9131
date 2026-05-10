@@ -1,0 +1,433 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'get-protocols-bucket-rules-name.html'
+summary: 'Retrieve S3 lifecycle rules for a bucket by name'
+---
+
+= Retrieve S3 lifecycle rules for a bucket by name
+
+[.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/s3/services/{svm.uuid}/buckets/{s3_bucket.uuid}/rules/{name}`#
+
+*Introduced In:* 9.13
+
+Retrieves all S3 Lifecycle rules associated with a bucket. Note that in order to retrieve S3 bucket rule parametes, the 'fields' option should be set to '**'.
+
+== Related ONTAP commands
+
+* `vserver object-store-server bucket lifecycle-management-rule show`
+
+== Learn more
+
+* link:manage_s3_bucket_lifecycle_management_rules.html[DOC /protocols/s3/services/{svm.uuid}/buckets/{s3_bucket.uuid}/rules]
+
+
+== Parameters
+
+[cols=5*,options=header]
+|===
+
+|Name
+|Type
+|In
+|Required
+|Description
+
+|s3_bucket.uuid
+|string
+|path
+|True
+a|The unique identifier of the bucket.
+
+
+|name
+|string
+|path
+|True
+a|The name of the lifecycle management rule to be applied on the bucket.
+
+
+|svm.uuid
+|string
+|path
+|True
+a|UUID of the SVM to which this object belongs.
+
+
+|fields
+|array[string]
+|query
+|False
+a|Specify the fields to return.
+
+|===
+
+== Response
+
+```
+Status: 200, Ok
+```
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|_links
+|link:#_links[_links]
+a|
+
+|abort_incomplete_multipart_upload
+|link:#abort_incomplete_multipart_upload[abort_incomplete_multipart_upload]
+a|Specifies a way to perform abort_incomplete_multipart_upload action on filtered objects within a bucket.
+
+
+|enabled
+|boolean
+a|Specifies whether or not the associated rule is enabled.
+
+
+|expiration
+|link:#expiration[expiration]
+a|Specifies a way to perform expiration action on filtered objects within a bucket.
+
+
+|name
+|string
+a|Bucket lifecycle management rule identifier.
+
+
+|non_current_version_expiration
+|link:#non_current_version_expiration[non_current_version_expiration]
+a|Specifies a way to perform non_current_version_expiration action on filtered objects within a bucket.
+
+
+|object_filter
+|link:#object_filter[object_filter]
+a|Specifies a way to filter objects within a bucket.
+
+
+|===
+
+
+.Example response
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "_links": {
+    "self": {
+      "href": "/api/resourcelink"
+    }
+  },
+  "abort_incomplete_multipart_upload": {
+    "_links": {
+      "self": {
+        "href": "/api/resourcelink"
+      }
+    }
+  },
+  "expiration": {
+    "_links": {
+      "self": {
+        "href": "/api/resourcelink"
+      }
+    },
+    "object_expiry_date": "string"
+  },
+  "name": "string",
+  "non_current_version_expiration": {
+    "_links": {
+      "self": {
+        "href": "/api/resourcelink"
+      }
+    }
+  },
+  "object_filter": {
+    "_links": {
+      "self": {
+        "href": "/api/resourcelink"
+      }
+    },
+    "prefix": "/logs",
+    "size_greater_than": 10485760,
+    "size_less_than": 10240,
+    "tags": [
+      "project1=projA",
+      "project2=projB"
+    ]
+  }
+}
+====
+
+== Error
+
+```
+Status: Default, Error
+```
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|error
+|link:#error[error]
+a|
+
+|===
+
+
+.Example error
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "error": {
+    "arguments": [
+      {
+        "code": "string",
+        "message": "string"
+      }
+    ],
+    "code": "4",
+    "message": "entry doesn't exist",
+    "target": "uuid"
+  }
+}
+====
+
+== Definitions
+
+[.api-def-first-level]
+.See Definitions
+[%collapsible%closed]
+//Start collapsible Definitions block
+====                
+[#href]
+[.api-collapsible-fifth-title]
+href
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|href
+|string
+a|
+
+|===
+
+
+[#_links]
+[.api-collapsible-fifth-title]
+_links
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|self
+|link:#href[href]
+a|
+
+|===
+
+
+[#abort_incomplete_multipart_upload]
+[.api-collapsible-fifth-title]
+abort_incomplete_multipart_upload
+
+Specifies a way to perform abort_incomplete_multipart_upload action on filtered objects within a bucket.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|_links
+|link:#_links[_links]
+a|
+
+|after_initiation_days
+|integer
+a|Number of days of initiation after which uploads can be aborted.
+
+
+|===
+
+
+[#expiration]
+[.api-collapsible-fifth-title]
+expiration
+
+Specifies a way to perform expiration action on filtered objects within a bucket.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|_links
+|link:#_links[_links]
+a|
+
+|expired_object_delete_marker
+|boolean
+a|Cleanup object delete markers.
+
+
+|object_age_days
+|integer
+a|Number of days since creation after which objects can be deleted.
+
+
+|object_expiry_date
+|string
+a|Specific date from when objects can expire.
+
+
+|===
+
+
+[#non_current_version_expiration]
+[.api-collapsible-fifth-title]
+non_current_version_expiration
+
+Specifies a way to perform non_current_version_expiration action on filtered objects within a bucket.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|_links
+|link:#_links[_links]
+a|
+
+|new_non_current_versions
+|integer
+a|Number of latest non-current versions to be retained.
+
+
+|non_current_days
+|integer
+a|Number of days after which non-current versions can be deleted.
+
+
+|===
+
+
+[#object_filter]
+[.api-collapsible-fifth-title]
+object_filter
+
+Specifies a way to filter objects within a bucket.
+
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|_links
+|link:#_links[_links]
+a|
+
+|prefix
+|string
+a|A prefix that is matched against object-names within a bucket.
+
+
+|size_greater_than
+|integer
+a|Size of the object greater than specified for which the corresponding lifecycle rule is to be applied.
+
+
+|size_less_than
+|integer
+a|Size of the object smaller than specified for which the corresponding lifecycle rule is to be applied.
+
+
+|tags
+|array[string]
+a|An array of key-value paired tags of the form +++<tag>+++or <tag=value>.+++</tag>+++
+
+
+|===
+
+
+[#error_arguments]
+[.api-collapsible-fifth-title]
+error_arguments
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|code
+|string
+a|Argument code
+
+
+|message
+|string
+a|Message argument
+
+
+|===
+
+
+[#error]
+[.api-collapsible-fifth-title]
+error
+
+[cols=3*,options=header]
+|===
+|Name
+|Type
+|Description
+
+|arguments
+|array[link:#error_arguments[error_arguments]]
+a|Message arguments
+
+
+|code
+|string
+a|Error code
+
+
+|message
+|string
+a|Error message
+
+
+|target
+|string
+a|The target parameter that caused the error.
+
+
+|===
+
+
+//end collapsible .Definitions block
+====

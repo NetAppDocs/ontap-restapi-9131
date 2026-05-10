@@ -1,0 +1,19 @@
+---
+sidebar: sidebar
+api: true
+explorer: false
+permalink: 'view_cifs_active_file_sessions.html'
+summary: 'View CIFS active file sessions'
+---
+
+= View CIFS active file sessions
+
+
+
+== Overview
+
+== ONTAP `cifs sessions file show` functionality is used to provide a list of currently opened files.
+
+==  ### Information on the open files * Lists all files opened in current session. ## Example ### Retrieving established open file information To retrieve the list of open files, use the following API. Note that _return_records=true_. ''' ``` # The API: GET /protocols/cifs/session/files # The call: curl -X GET "https://+++<cluster-mgmt-ip>+++/api/protocols/cifs/session/files?return_timeout=15&return_records=true" -H "accept: application/json" # The response: { "records": [ { "node": { "uuid": "9ea96c65-4411-11ec-b358-005056bbdd2c", "name": "node1" }, "svm": { "uuid": "62234287-4412-11ec-b358-005056bbdd2c", "name": "svm1" }, "file": { "identifier": 24, "type": "regular" }, "connection": { "identifier": 127465, "count": 1 }, "session_id": 1827054073828868097, "open_mode": "w", "volume": { "name": "vol1", "uuid": "7a5ef257-52de-11e8-95f4-005056952000" }, "share": { "name": "root", "mode": "rwd" }, "path": "a\\b\\c\\f1", "continuously_available": "no", "reconnected": "No", "range_lock_count": 0 }, { "node": { "uuid": "9ea96c65-4411-11ec-b358-005056bbdd2c", "name": "node2" }, "svm": { "uuid": "62234287-4412-11ec-b358-005056bbdd2c", "name": "svm2" }, "file": { "identifier": 14, "type": "regular" }, "connection": { "identifier": 127465, "count": 1 }, "session_id": 1827054073828868097, "open_mode": "r", "volume": { "name": "vol2", "uuid": "7a5ef257-52de-11e8-95f4-005056952000" }, "share": { "name": "root", "mode": "rwd" }, "path": "a\\b\\c\\f2", "continuously_available": "no", "reconnected": "No", "range_lock_count": 0 } ], "num_records": 2 } ``` ''' ### Retrieving specific open file Information ''' ``` # The API: GET /protocols/cifs/session/files/{node.uuid}/{svm.uuid}/{file.identifier}/{connection.identifier}/\{session_id} # The call: curl -X GET "https://+++<cluster-mgmt-ip>+++/api/protocols/cifs/session/files/8d7ef257-52de-11e8-95f4-005056952ecd/b009a9e7-4081-b576-7575-ada21efcaf16/14/82792/4466726405421400095" # The response: { "node": { "uuid": "9ea96c65-4411-11ec-b358-005056bbdd2c", "name": "node1" }, "svm": { "uuid": "62234287-4412-11ec-b358-005056bbdd2c", "name": "svm1" }, "file": { "identifier": 24, "type": "regular" }, "connection": { "identifier": 127465, "count": 1 }, "session_id": 1827054073828868097, "open_mode": "r", "volume": { "name": "vol1", "uuid": "7a5ef257-52de-11e8-95f4-005056952000" }, "share": { "name": "root", "mode": "rwd" }, "path": "a\\b\\c\\f1", "continuously_available": "no", "reconnected": "No", "range_lock_count": 0 } ``` ''' ### Closing a specific file based on `file.identifier`, `connection.identifier` and `session_id` The file being closed is identified by the UUID of its SVM, the corresponding file.identifier, connection.identifier and session_id. ''' ``` # The API: DELETE /protocols/cifs/session/files/{node.uuid}/{svm.uuid}/{file.identifier}/{connection.identifier}/\{session_id} # The call: curl -X DELETE "https://+++<mgmt-ip>+++/api/protocols/cifs/session/files/8d7ef257-52de-11e8-95f4-005056952ecd/b009a9e7-4081-b576-7575-ada21efcaf16/14/82792/4466726405421400095" -H "accept: application/json" ``` '''+++</mgmt-ip>++++++</cluster-mgmt-ip>++++++</cluster-mgmt-ip>+++
+
+
