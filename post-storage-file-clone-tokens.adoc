@@ -117,6 +117,24 @@ a|Token UUID.
 |===
 
 
+.Example request
+[%collapsible%closed]
+====
+[source,json,subs=+macros]
+{
+  "expiry_time": {
+    "left": "string",
+    "limit": "string"
+  },
+  "node": {
+    "name": "node1",
+    "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+  },
+  "reserve_size": 0,
+  "uuid": "string"
+}
+====
+
 == Response
 
 ```
@@ -149,7 +167,18 @@ a|
 {
   "num_records": 1,
   "records": [
-    {}
+    {
+      "expiry_time": {
+        "left": "string",
+        "limit": "string"
+      },
+      "node": {
+        "name": "node1",
+        "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
+      },
+      "reserve_size": 0,
+      "uuid": "string"
+    }
   ]
 }
 ====
