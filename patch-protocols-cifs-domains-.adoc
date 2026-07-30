@@ -121,9 +121,6 @@ a|Specifies the trusted domain records.
     "schedule_time_of_day": 36900,
     "schedule_warn_message": "string"
   },
-  "preferred_dcs": [
-    {}
-  ],
   "server_discovery_mode": "string",
   "svm": {
     "name": "svm1",
