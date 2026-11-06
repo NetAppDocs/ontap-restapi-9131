@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-name-services-ldap-.html'
+keywords: 'ldap configuration,svm ldap,ldap settings,ldap parameters,svm uuid'
 summary: 'Retrieve LDAP configuration for an SVM'
 ---
 
 = Retrieve LDAP configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the LDAP configuration for a storage virtual machine (SVM) to review all parameters currently in place. This helps ensure proper integration with directory services.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/name-services/ldap/{svm.uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves LDAP configuration for an SVM. All parameters for the LDAP configuration are displayed by default.
 

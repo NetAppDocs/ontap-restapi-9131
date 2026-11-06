@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_disks.html'
+keywords: 'disks management,storage disk,cluster disks,disk ownership,modify disk'
 summary: 'Manage disks'
 ---
 
 = Manage disks
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve detailed information about all storage disks in the cluster using the storage disk GET API. This functionality is essential for monitoring disk status and performance within your ONTAP environment.
 
 == Retrieving storage disk information
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-support-configuration-backup-backups-.html'
+keywords: 'configuration backup,delete backup,node uuid,backup name,system configuration'
 summary: 'Delete a configuration backup'
 ---
 
 = Delete a configuration backup
+:imagesdir: ./media/
+
+[.lead]
+Deletes a configuration backup to remove an existing saved state of your system settings. Use this operation when you no longer require a specific backup or need to manage storage space.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/support/configuration-backup/backups/{node.uuid}/{name}`#
 
-*Introduced In:* 9.7
+== Introduced in
 
-Deletes a configuration backup.
+ONTAP 9.7
 
 == Related ONTAP commands
 

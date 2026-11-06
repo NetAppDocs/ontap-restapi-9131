@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-security-key-managers-auth-keys-.html'
+keywords: 'authentication key,admin svm,key query,external key manager,key retrieval,key identification'
 summary: 'List all authentication keys associated with the admin SVM'
 ---
 
 = List all authentication keys associated with the admin SVM
+:imagesdir: ./media/
+
+[.lead]
+Retrieves authentication keys associated with the admin SVM. Use this endpoint to access specific keys identified by 'key_id' for security management purposes.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/security/key-managers/{security_key_manager.uuid}/auth-keys/{key_id}`#
 
-*Introduced In:* 9.12
+== Introduced in
+
+ONTAP 9.12
+
+== Usage notes
 
 Retrieves the authentication key identified by the 'key_id' and associated with the admin SVM.
 

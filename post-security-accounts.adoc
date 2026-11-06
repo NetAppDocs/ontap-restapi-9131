@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-accounts.html'
+keywords: 'user account,create account,rbac role,svm scope,ldap fastbind,second authentication'
 summary: 'Create a new user account'
 ---
 
 = Create a new user account
+:imagesdir: ./media/
+
+[.lead]
+Creates a new user account to manage access and permissions within your ONTAP system. Use this endpoint to define account attributes such as role, authentication methods, and application access.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/accounts`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates a new user account.
+ONTAP 9.6
 
 == Required parameters
 

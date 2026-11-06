@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-cluster-counter-tables-rows-.html'
+keywords: 'counter table,counter row,table name,row identifier,return fields'
 summary: 'Retrieve a counter row'
 ---
 
 = Retrieve a counter row
+:imagesdir: ./media/
+
+[.lead]
+Obtains a single counter row, which provides detailed metrics for performance analysis.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cluster/counter/tables/{counter_table.name}/rows/{id}`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Returns a single counter row.
 

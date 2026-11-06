@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_event_destinations.html'
+keywords: 'event destinations,email destination,syslog destination,rest api transmission,snmp traps'
 summary: 'Manage event destinations'
 ---
 
 = Manage event destinations
+:imagesdir: ./media/
 
-
+[.lead]
+Configure event destinations to specify where event information is transmitted within your system. Utilize these endpoints to manage destination types such as email, syslog, REST API, and SNMP, each serving distinct purposes in event handling and notification.
 
 == Overview
 

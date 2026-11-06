@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-protocols-fpolicy-engines-.html'
+keywords: 'fpolicy engine,svm configuration,fpolicy update,fpolicy modify,external engine,svm uuid'
 summary: 'Update a specific FPolicy engine configuration for an SVM'
 ---
 
 = Update a specific FPolicy engine configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Updates the configuration of a specific FPolicy engine for a Storage Virtual Machine (SVM). This is useful when you need to modify the FPolicy engine settings to align with your organization's policy requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/protocols/fpolicy/{svm.uuid}/engines/{name}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Updates a specific FPolicy engine configuration of an SVM. Modification of an FPolicy engine that is attached to one or more enabled FPolicy policies is not allowed.
 

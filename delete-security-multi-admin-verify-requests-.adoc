@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-security-multi-admin-verify-requests-.html'
+keywords: 'multi admin,delete request,security request,request index,verify request'
 summary: 'Delete a multi-admin-verify request'
 ---
 
 = Delete a multi-admin-verify request
+:imagesdir: ./media/
+
+[.lead]
+Deletes a multi-admin verification request, removing it from the system when it is no longer needed.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/security/multi-admin-verify/requests/{index}`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Deletes a multi-admin-verify request.
 

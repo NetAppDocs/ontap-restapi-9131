@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-file-security-permissions-.html'
+keywords: 'slag acl,remove permissions,file security,bulk deletion,file-directory,slag removal'
 summary: 'Remove all SLAG ACLs for a path'
 ---
 
 = Remove all SLAG ACLs for a path
+:imagesdir: ./media/
+
+[.lead]
+Removes all SLAG ACLs for a specified path, streamlining access management for the directory. Use this endpoint when you need to perform bulk deletions of SLAG ACLs efficiently.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/file-security/permissions/{svm.uuid}/{path}`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 :doctype: book
 

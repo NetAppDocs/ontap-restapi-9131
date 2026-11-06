@@ -3,16 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-application-applications-components-snapshots.html'
+keywords: 'snapshot retrieval,maxdata template,application component,snapshot copies,granular snapshot'
 summary: 'Retrieve application component Snapshot copies'
 ---
 
 = Retrieve application component Snapshot copies
+:imagesdir: ./media/
+
+[.lead]
+Retrieves Snapshot copies of an application component to manage granular backup and recovery tasks for specific applications, especially Maxdata template applications.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/application/applications/{application.uuid}/components/{component.uuid}/snapshots`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves Snapshot copies of an application component.
+ONTAP 9.6
+
+== Usage notes
 
 This endpoint is only supported for Maxdata template applications.
 

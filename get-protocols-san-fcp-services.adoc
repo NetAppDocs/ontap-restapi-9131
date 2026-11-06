@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-san-fcp-services.html'
+keywords: 'fc protocol,fc services,san protocols,vserver fcp,fcp statistics,fcp metrics'
 summary: 'Retrieve FC protocol services'
 ---
 
 = Retrieve FC protocol services
+:imagesdir: ./media/
+
+[.lead]
+Accesses the FC protocol services to review their current configurations and operational status. This can be useful for managing and troubleshooting Fibre Channel environments.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/san/fcp/services`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves FC Protocol services.
 
@@ -430,7 +441,7 @@ a|
           "total": 1000,
           "write": 100
         },
-        "timestamp": "2017-01-25 06:20:13 -0500"
+        "timestamp": "2017-01-25 11:20:13 +0000"
       },
       "statistics": {
         "iops_raw": {
@@ -449,7 +460,7 @@ a|
           "total": 1000,
           "write": 100
         },
-        "timestamp": "2017-01-25 06:20:13 -0500"
+        "timestamp": "2017-01-25 11:20:13 +0000"
       },
       "svm": {
         "_links": {

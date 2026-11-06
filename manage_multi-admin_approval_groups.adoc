@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_multi-admin_approval_groups.html'
+keywords: 'multi-admin approval,cluster server,approval group,ontap users,svm approval'
 summary: 'Manage multi-admin approval groups'
 ---
 
 = Manage multi-admin approval groups
+:imagesdir: ./media/
 
-
+[.lead]
+Define and manage multi-admin approval groups within the cluster server context to control access and actions through rule-based or global settings. Use these endpoints to create, retrieve, or modify approval groups, ensuring collaborative decision-making and security compliance.
 
 == Overview
 

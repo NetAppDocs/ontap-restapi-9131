@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_host_cache_settings.html'
+keywords: 'host cache,cache settings,host management,svm settings,ttl configuration,negative cache'
 summary: 'Manage host cache settings'
 ---
 
 = Manage host cache settings
+:imagesdir: ./media/
 
-
+[.lead]
+Access and adjust host cache settings through these endpoints to optimize caching behavior on your system. Utilize these tools to retrieve existing settings or update configurations for specific Storage Virtual Machines (SVMs) as needed.
 
 == Overview
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-network-fc-interfaces.html'
+keywords: 'fc interfaces,networking interfaces,fibre channel,fc fabrics,cluster nodes,location ports'
 summary: 'Retrieve FC interfaces'
 ---
 
 = Retrieve FC interfaces
+:imagesdir: ./media/
+
+[.lead]
+Retrieves FC interfaces to view details about Fibre Channel network connections.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/network/fc/interfaces`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves FC interfaces.
+ONTAP 9.6
 
 == Related ONTAP commands
 
@@ -701,7 +708,7 @@ a|
           "total": 1000,
           "write": 100
         },
-        "timestamp": "2017-01-25 06:20:13 -0500"
+        "timestamp": "2017-01-25 11:20:13 +0000"
       },
       "name": "fc_lif1",
       "port_address": "5060F",
@@ -723,7 +730,7 @@ a|
           "total": 1000,
           "write": 100
         },
-        "timestamp": "2017-01-25 06:20:13 -0500"
+        "timestamp": "2017-01-25 11:20:13 +0000"
       },
       "svm": {
         "_links": {

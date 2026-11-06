@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'perform_bulk_import_for_cifs_user_groups.html'
+keywords: 'bulk import,cifs users,cifs groups,group memberships,import status'
 summary: 'Perform bulk import for CIFS user groups'
 ---
 
 = Perform bulk import for CIFS user groups
+:imagesdir: ./media/
 
-
+[.lead]
+Use the CIFS bulk import endpoints to manage the local users, groups, and group memberships in your ONTAP environment. These endpoints help perform bulk imports from a specified URI, retrieve the status of the last import, and upload import statuses to a designated URI.
 
 == Overview
 

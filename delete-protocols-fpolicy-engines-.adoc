@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-fpolicy-engines-.html'
+keywords: 'fpolicy engine,external engine,engine configuration,policy attachment,deletion restriction'
 summary: 'Delete the FPolicy external engine configuration'
 ---
 
 = Delete the FPolicy external engine configuration
+:imagesdir: ./media/
+
+[.lead]
+Removes the configuration for an FPolicy external engine. This action is typically used when the engine is no longer needed or has been replaced.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/fpolicy/{svm.uuid}/engines/{name}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Deletes the FPolicy external engine configuration. Deletion of an FPolicy engine that is attached to one or more FPolicy policies is not allowed.
 

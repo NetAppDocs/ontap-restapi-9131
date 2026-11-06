@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-support-ems-filters-rules.html'
+keywords: 'event filter,include exclude rule,message criteria,parameter criteria,filter name,event rule'
 summary: 'Create an event filter rule'
 ---
 
 = Create an event filter rule
+:imagesdir: ./media/
+
+[.lead]
+Creates an event filter rule to specify criteria for matching events, either by including or excluding specific messages or parameters. This helps you manage and respond to events based on your defined rules.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/support/ems/filters/{name}/rules`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates an event filter rule.
+ONTAP 9.6
 
 == Required properties
 

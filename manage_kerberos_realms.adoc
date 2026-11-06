@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_kerberos_realms.html'
+keywords: 'kerberos realms,nfs kerberos,manage kerberos,create kerberos realm,update kerberos realm,delete kerberos realm'
 summary: 'Manage Kerberos realms'
 ---
 
 = Manage Kerberos realms
+:imagesdir: ./media/
 
-
+[.lead]
+Manage Kerberos realms to configure authentication settings within your storage environment. Use these endpoints to retrieve, create, update, or delete Kerberos realm details for secure access management.
 
 == Examples
 

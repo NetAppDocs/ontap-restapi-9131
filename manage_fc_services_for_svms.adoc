@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_fc_services_for_svms.html'
+keywords: 'fibre channel protocol,svm management,performance monitoring,create fc service,delete fc service'
 summary: 'Manage FC services for SVMs'
 ---
 
 = Manage FC services for SVMs
+:imagesdir: ./media/
 
-
+[.lead]
+Use the FC Protocol service REST API to create, update, delete, and discover Fibre Channel Protocol services for SVMs. Define and manage the properties of the FC Protocol target to facilitate communication between initiators and the SVM.
 
 == Overview
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_totp_profiles.html'
+keywords: 'totp profiles,secure shell,secondary authentication,cluster user,svm user'
 summary: 'Manage TOTP profiles'
 ---
 
 = Manage TOTP profiles
+:imagesdir: ./media/
 
-
+[.lead]
+Configure time-based one-time password (TOTP) profiles for user accounts to enhance secure shell (SSH) access. Use these endpoints to manage individual TOTP profiles when setting up secondary authentication methods.
 
 == Overview
 

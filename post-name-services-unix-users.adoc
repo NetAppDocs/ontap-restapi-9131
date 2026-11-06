@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-name-services-unix-users.html'
+keywords: 'create unix user,local unix user,svm unix configuration,unix user limit,unix user settings'
 summary: 'Create local UNIX user configuration for an SVM'
 ---
 
 = Create local UNIX user configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Configures a local UNIX user for a Storage Virtual Machine (SVM). Use this to manage user access and permissions within the SVM environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/name-services/unix-users`#
 
-*Introduced In:* 9.9
+== Introduced in
+
+ONTAP 9.9
+
+== Usage notes
 
 Creates the local UNIX user configuration for an SVM.
 

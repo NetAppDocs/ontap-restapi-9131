@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-ipsec-policies.html'
+keywords: 'ipsec policy,create ipsec,security policy,ontap ipsec,ipsec create'
 summary: 'Create an IPsec policy'
 ---
 
 = Create an IPsec policy
+:imagesdir: ./media/
+
+[.lead]
+Creates an IPsec policy to define the security settings and parameters for network communications. Use this endpoint when you need to establish secure connections between systems using IPsec protocols.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/ipsec/policies`#
 
-*Introduced In:* 9.8
+== Introduced in
 
-Creates an IPsec policy.
+ONTAP 9.8
 
 == Related ONTAP commands
 

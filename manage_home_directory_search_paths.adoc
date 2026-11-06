@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_home_directory_search_paths.html'
+keywords: 'home directory,search paths,cifs server,smb users,dynamic share'
 summary: 'Manage home directory search paths'
 ---
 
 = Manage home directory search paths
+:imagesdir: ./media/
 
-
+[.lead]
+Define and manage home directory search paths to organize SMB user directories dynamically within your storage virtual machine (SVM). Use these endpoints to specify, retrieve, reorder, and delete search paths, ensuring efficient access to user home directories across the cluster.
 
 == Overview
 

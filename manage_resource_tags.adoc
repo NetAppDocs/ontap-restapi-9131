@@ -3,16 +3,19 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_resource_tags.html'
+keywords: 'resource tags,tagging resources,tracking purposes,test environment,accounting team'
 summary: 'Manage resource tags'
 ---
 
 = Manage resource tags
+:imagesdir: ./media/
 
-
+[.lead]
+Utilize resource tags to organize and retrieve resources across the API based on specific tag values. Access endpoints to list, create, and delete tags, aiding in efficient resource management and tracking.
 
 = Overview
 
-You can use this endpoint to list all of the resources in the API that have been tagged with a particular tag value. See the section labelled <<Tagging_Resources_for_Tracking_Purposes,Tagging Resources for Tracking Purposes>> to find out more information about how to tag a resource.
+You can use this endpoint to list all of the resources in the API that have been tagged with a particular tag value. See the section labelled link:getting_started_with_the_ontap_rest_api.html#Tagging_Resources_for_Tracking_Purposes[Tagging Resources for Tracking Purposes] to find out more information about how to tag a resource.
 
 == Examples
 

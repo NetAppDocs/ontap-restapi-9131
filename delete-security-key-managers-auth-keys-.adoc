@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-security-key-managers-auth-keys-.html'
+keywords: 'key manager,auth key,external key manager,delete key,authentication key,security key manager'
 summary: 'Delete an authentication key'
 ---
 
 = Delete an authentication key
+:imagesdir: ./media/
+
+[.lead]
+Deletes an authentication key when you need to remove access or revoke permissions associated with that key.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/security/key-managers/{security_key_manager.uuid}/auth-keys/{key_id}`#
 
-*Introduced In:* 9.12
+== Introduced in
 
-Deletes an authentication key.
+ONTAP 9.12
 
 == Related ONTAP commands
 

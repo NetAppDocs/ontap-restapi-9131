@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_nfs_connected_clients.html'
+keywords: 'connected clients,nfs server,cache idle time,export policy,nfs protocol'
 summary: 'View NFS connected clients'
 ---
 
 = View NFS connected clients
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve and manage information about currently connected NFS clients, idle clients, and recently unmounted clients within your ONTAP environment. Use these endpoints to monitor client activity and manage connection states based on cache idle time settings.
 
 == Overview
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-snapmirror-relationships.html'
+keywords: 'snapmirror relationships,destination endpoints,current svm,current cluster,snapmirror destinations,snapmirror lag time'
 summary: 'Retrieve information for SnapMirror relationships'
 ---
 
 = Retrieve information for SnapMirror relationships
+:imagesdir: ./media/
+
+[.lead]
+Retrieves information about SnapMirror relationships to understand their configuration and status within your storage environment. This is useful for managing replication tasks and monitoring data transfer processes between clusters or storage virtual machines (SVMs).
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/snapmirror/relationships`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves information for SnapMirror relationships whose destination endpoints are in the current SVM or the current cluster, depending on the cluster context.
 
@@ -667,7 +678,7 @@ a|
             "href": "/api/resourcelink"
           }
         },
-        "end_time": "2020-12-02 21:36:19 -0500",
+        "end_time": "2020-12-03 02:36:19 +0000",
         "state": "string",
         "total_duration": "PT28M41S",
         "uuid": "4ea7a442-86d1-11e0-ae1c-123478563412"

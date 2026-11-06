@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_totp_profile_for_a_specific_user_account.html'
+keywords: 'totp profile,user account,totp configuration,owner uuid,specific user'
 summary: 'Manage TOTP profile for a specific user account'
 ---
 
 = Manage TOTP profile for a specific user account
+:imagesdir: ./media/
 
-
+[.lead]
+Configure TOTP profiles for user accounts using this API to enhance security with time-based one-time passwords. Specify the SVM owner UUID and account user name to manage authentication settings for specific accounts.
 
 == Overview
 

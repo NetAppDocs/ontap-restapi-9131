@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_s3_buckets.html'
+keywords: 's3 buckets,s3 container,object namespace,object metadata,access controls,encryption'
 summary: 'Manage S3 buckets'
 ---
 
 = Manage S3 buckets
+:imagesdir: ./media/
 
-
+[.lead]
+Manage S3 buckets to organize and control object storage within your environment. Use these endpoints to create, retrieve, update, and delete buckets, ensuring efficient access and management of your S3 resources.
 
 :doctype: book
 

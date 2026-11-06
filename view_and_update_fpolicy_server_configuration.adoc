@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_and_update_fpolicy_server_configuration.html'
+keywords: 'fpolicy server configuration,status update,svm connections,passthrough read,external servers'
 summary: 'View and update FPolicy server configuration'
 ---
 
 = View and update FPolicy server configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Use this API to view and update the connection status of external FPolicy servers. Display FPolicy server connections for specific SVMs or retrieve passthrough-read connections depending on the query parameters.
 
 == Overview
 

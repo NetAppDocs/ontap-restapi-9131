@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-cluster-peers-.html'
+keywords: 'cluster peer,peer relationship,update peer,cluster update,peer uuid'
 summary: 'Update a cluster peer instance'
 ---
 
 = Update a cluster peer instance
+:imagesdir: ./media/
+
+[.lead]
+Updates a cluster peer instance to modify its configuration or properties as needed to maintain connectivity and collaboration between clusters.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/cluster/peers/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Updates a cluster peer instance.
-
+ONTAP 9.6
 
 == Parameters
 
@@ -137,7 +143,7 @@ a|UUID of the cluster peer relationship. For anonymous cluster peer offers, the 
   },
   "status": {
     "state": "available",
-    "update_time": "2017-01-25 06:20:13 -0500"
+    "update_time": "2017-01-25 11:20:13 +0000"
   },
   "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
 }
@@ -249,7 +255,7 @@ a|UUID of the cluster peer relationship. For anonymous cluster peer offers, the 
   },
   "status": {
     "state": "available",
-    "update_time": "2017-01-25 06:20:13 -0500"
+    "update_time": "2017-01-25 11:20:13 +0000"
   },
   "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
 }

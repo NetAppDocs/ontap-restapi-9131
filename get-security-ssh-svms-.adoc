@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-security-ssh-svms-.html'
+keywords: 'ssh configuration,svm configuration,ssh server,security ssh,svm uuid'
 summary: 'Retrieve the SSH server configuration for an SVM'
 ---
 
 = Retrieve the SSH server configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the SSH server configuration for a specified SVM to review or manage its settings.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/security/ssh/svms/{svm.uuid}`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Retrieves the SSH server configuration for the specified SVM.
+ONTAP 9.10
 
 == Related ONTAP commands
 

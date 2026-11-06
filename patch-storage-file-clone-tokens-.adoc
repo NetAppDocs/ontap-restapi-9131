@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-storage-file-clone-tokens-.html'
+keywords: 'file clone,clone token,expiry time,modify token,node uuid,token uuid'
 summary: 'Update a file clone token'
 ---
 
 = Update a file clone token
+:imagesdir: ./media/
+
+[.lead]
+Updates a file clone token to modify the expiry time associated with it. This helps manage the lifecycle of file clones efficiently.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/storage/file/clone/tokens/{node.uuid}/{uuid}`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Updates a file clone token.
+ONTAP 9.10
 
 == Related Ontap commands
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_iscsi_sessions.html'
+keywords: 'iscsi session,ontap iscsi,iscsi initiator,iscsi target,iscsi connections'
 summary: 'View iSCSI sessions'
 ---
 
 = View iSCSI sessions
+:imagesdir: ./media/
 
-
+[.lead]
+Access the iSCSI sessions REST API to view information about iSCSI initiators that have successfully logged in to ONTAP. This feature helps you monitor and manage the active iSCSI sessions between initiators and targets within your storage environment.
 
 == Overview
 

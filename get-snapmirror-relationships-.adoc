@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-snapmirror-relationships-.html'
+keywords: 'snapmirror relationships,relationship uuid,consistency group volumes,destination volumes,source volumes'
 summary: 'Retrieve a SnapMirror relationship'
 ---
 
 = Retrieve a SnapMirror relationship
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a SnapMirror relationship to examine the current configuration and status of data replication between ONTAP systems. This is useful for monitoring replication health and ensuring data synchronization.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/snapmirror/relationships/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves a SnapMirror relationship.
+ONTAP 9.6
 
 == Related ONTAP commands
 
@@ -336,7 +343,7 @@ a|
         "href": "/api/resourcelink"
       }
     },
-    "end_time": "2020-12-02 21:36:19 -0500",
+    "end_time": "2020-12-03 02:36:19 +0000",
     "state": "string",
     "total_duration": "PT28M41S",
     "uuid": "4ea7a442-86d1-11e0-ae1c-123478563412"

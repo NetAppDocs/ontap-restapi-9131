@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-security-key-managers-keys-key-ids-.html'
+keywords: 'security keys,key management,key information,key manager,node keys,key identifier'
 summary: 'Retrieve key management key information for specified keys'
 ---
 
 = Retrieve key management key information for specified keys
+:imagesdir: ./media/
+
+[.lead]
+Retrieves information about key management keys for specified keys, which helps in managing and auditing your security keys effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/security/key-managers/{security_key_manager.uuid}/keys/{node.uuid}/key-ids/{key_id}`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Retrieves the key management keys information for the specified key_id.
 

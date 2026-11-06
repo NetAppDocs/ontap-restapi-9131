@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_pools.html'
+keywords: 'storage pools,retrieving storage,creating storage,shared storage,flash capacity'
 summary: 'Manage storage pools'
 ---
 
 = Manage storage pools
+:imagesdir: ./media/
 
-
+[.lead]
+Manage storage pools in your cluster by retrieving information about shared pools and creating new ones to optimize flash capacity distribution across cache tiers. Access identifiers and properties of storage pools, and utilize spares according to ONTAP best practices.
 
 == Retrieving storage pool information
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_files_and_directories.html'
+keywords: 'file management,read write,metadata retrieval,create delete,quality of service'
 summary: 'Manage files and directories'
 ---
 
 = Manage files and directories
+:imagesdir: ./media/
 
-
+[.lead]
+Use this API to read, write, list, and manage files and directories within your storage volumes. Specify paths using encoded characters to interact with specific files or directories, ensuring efficient data handling and organization.
 
 == Overview
 

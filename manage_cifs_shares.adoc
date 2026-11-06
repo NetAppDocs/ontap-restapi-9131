@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cifs_shares.html'
+keywords: 'cifs shares,share permissions,acls configuration,oplocks settings,unix symlink'
 summary: 'Manage CIFS shares'
 ---
 
 = Manage CIFS shares
+:imagesdir: ./media/
 
-
+[.lead]
+Manage CIFS shares to set up access points on your CIFS server using SMB. Create and configure these shares with appropriate permissions to ensure accessibility and security within your storage virtual machine (SVM).
 
 == Overview
 

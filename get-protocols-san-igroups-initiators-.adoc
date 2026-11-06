@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-san-igroups-initiators-.html'
+keywords: 'san protocols,initiator group,initiator retrieval,lun igroup,connectivity tracking'
 summary: 'Retrieve an initiator'
 ---
 
 = Retrieve an initiator
+:imagesdir: ./media/
+
+[.lead]
+Retrieves an initiator from an initiator group, providing visibility into the specific initiators directly managed by the group.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/san/igroups/{igroup.uuid}/initiators/{name}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves an initiator of an initiator group.
 This API only reports initiators owned directly by the initiator group.
@@ -167,7 +178,7 @@ An FC WWPN consists of 16 hexadecimal digits grouped as 8 pairs separated by col
                 "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
               }
             },
-            "last_seen_time": "2021-03-14 00:19:00 -0500"
+            "last_seen_time": "2021-03-14 05:19:00 +0000"
           }
         ],
         "node": {

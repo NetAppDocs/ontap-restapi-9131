@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-cluster.html'
+keywords: 'cluster configuration,cluster update,node modify,dns services,time zone,ssl security'
 summary: 'Update cluster configuration'
 ---
 
 = Update cluster configuration
+:imagesdir: ./media/
+
+[.lead]
+Updates the cluster configuration to modify settings after the cluster is initially created. This operation is useful for adjusting the cluster's identity, node settings, or service configurations to meet evolving requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/cluster`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Updates the cluster configuration after the cluster is created.
 
@@ -1881,7 +1892,7 @@ a|Controller information
 a|The current or "wall clock" time of the node in ISO-8601 date, time, and time zone format.
 The ISO-8601 date and time are localized based on the ONTAP cluster's timezone setting.
 
-* example: 2019-04-17 11:49:26 -0400
+* example: 2019-04-17 15:49:26 +0000
 * format: date-time
 * readOnly: 1
 * Introduced in: 9.6

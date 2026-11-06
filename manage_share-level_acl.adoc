@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_share-level_acl.html'
+keywords: 'share-level acl,permissions cifs,access control lists,windows users,unix users'
 summary: 'Manage share-level ACL'
 ---
 
 = Manage share-level ACL
+:imagesdir: ./media/
 
-
+[.lead]
+Configure and manage share-level access control lists (ACLs) on CIFS shares to secure file and folder access over a network. Share-level ACLs consist of access control entries that define user or group permissions for accessing the share, independently of the security style of the underlying volume or qtree.
 
 == Overview
 

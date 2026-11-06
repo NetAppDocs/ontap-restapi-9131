@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-cluster.html'
+keywords: 'cluster creation,password setup,single node cluster,management interface,configuration backup,timezone 설정'
 summary: 'Create a cluster'
 ---
 
 = Create a cluster
+:imagesdir: ./media/
+
+[.lead]
+Creates a cluster, initiating a new ONTAP storage environment. Use this endpoint when you need to establish a fresh cluster setup with specific configurations.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cluster`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates a cluster.
+ONTAP 9.6
 
 == Required properties
 
@@ -313,7 +320,7 @@ a|
         "memory_size": 1024000000,
         "over_temperature": "string"
       },
-      "date": "2019-04-17 11:49:26 -0400",
+      "date": "2019-04-17 15:49:26 +0000",
       "ha": {
         "giveback": {
           "failure": {
@@ -2214,7 +2221,7 @@ a|Controller information
 a|The current or "wall clock" time of the node in ISO-8601 date, time, and time zone format.
 The ISO-8601 date and time are localized based on the ONTAP cluster's timezone setting.
 
-* example: 2019-04-17 11:49:26 -0400
+* example: 2019-04-17 15:49:26 +0000
 * format: date-time
 * readOnly: 1
 * Introduced in: 9.6

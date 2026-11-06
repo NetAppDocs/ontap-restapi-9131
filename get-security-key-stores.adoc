@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-security-key-stores.html'
+keywords: 'keystores,retrieve keystores,security keystores,filter location,order by,svm filter'
 summary: 'Retrieve keystores'
 ---
 
 = Retrieve keystores
+:imagesdir: ./media/
+
+[.lead]
+Accesses keystores to view their configurations, which are essential for managing security and encryption settings within your storage environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/security/key-stores`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Retrieves keystores.
 

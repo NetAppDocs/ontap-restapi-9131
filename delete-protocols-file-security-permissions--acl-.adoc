@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-file-security-permissions--acl-.html'
+keywords: 'file security,permissions delete,access control,acl removal,slag,ontap commands'
 summary: 'Delete a SACL or DACL ACL'
 ---
 
 = Delete a SACL or DACL ACL
+:imagesdir: ./media/
+
+[.lead]
+Deletes a SACL or DACL ACL to remove specific security settings from a storage object. This operation is typically used when you need to update or clear access controls on files and directories.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/file-security/permissions/{svm.uuid}/{path}/acl/{user}`#
 
-*Introduced In:* 9.9
+== Introduced in
+
+ONTAP 9.9
+
+== Usage notes
 
 Deletes the SACL/DACL ACL
 You must keep the following points in mind while using these endpoints:

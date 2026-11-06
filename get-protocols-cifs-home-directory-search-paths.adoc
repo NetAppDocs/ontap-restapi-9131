@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-cifs-home-directory-search-paths.html'
+keywords: 'cifs search,home directory,cifs paths,home paths,cifs server,search paths'
 summary: 'Retrieve CIFS home directory search paths'
 ---
 
 = Retrieve CIFS home directory search paths
+:imagesdir: ./media/
+
+[.lead]
+Retrieves CIFS home directory search paths to review the configured search paths for CIFS home directories.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/cifs/home-directory/search-paths`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves CIFS home directory search paths.
+ONTAP 9.6
 
 == Related ONTAP commands
 

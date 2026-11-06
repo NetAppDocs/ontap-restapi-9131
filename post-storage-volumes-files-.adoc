@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-storage-volumes-files-.html'
+keywords: 'create file,volume uuid,new directory,new symlink,file path'
 summary: 'Create a new file with the supplied data'
 ---
 
 = Create a new file with the supplied data
+:imagesdir: ./media/
+
+[.lead]
+Creates a new file, directory, or symbolic link with the specified data. Use this operation to organize or manage your file system structure effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/storage/volumes/{volume.uuid}/files/{path}`#
 
-*Introduced In:* 9.8
+== Introduced in
+
+ONTAP 9.8
+
+== Usage notes
 
 Creates a new file with the supplied data, a new directory or a new symlink.
 
@@ -92,7 +103,7 @@ a|Additional file system analytics information summarizing all descendents of a 
 
 This property is only populated if file system analytics is enabled on the containing volume.
 
-In the context of the `records` property of a link:file-info-response(#model-file-info-response),analyticsobjectswillonlyincludepropertiesthatmayvarybetweenelementswithinthecollection.forexample,theanalyticsobjectswillnotcontainhistogramlabels,sincethesamehistogramlabelsareusedforallelementswithinthecollection.theinvariantinformationisinsteadavailableviatheanalyticspropertyofthefile-info-response(#model-file-info-response).thisavoidsanexcessiveamountofduplicatedinformationwhenaget-storage-volumes-files-.html<<model-file_info_response,file_info_response>>, analytics objects will only include properties that may vary between elements within the collection. For example, the analytics objects will not contain histogram labels, since the same histogram labels are used for all elements within the collection. The invariant information is instead available via the analytics property of the <<model-file_info_response,file_info_response>>. This avoids an excessive amount of duplicated information when a [GET  /storage/volumes/{volume.uuid}/files/\{path}]  call returns a large collection.
+In the context of the `records` property of a link:file_info_response.html[file_info_response] , analytics objects will only include properties that may vary between elements within the collection. For example, the analytics objects will not contain histogram labels, since the same histogram labels are used for all elements within the collection. The invariant information is instead available via the `analytics` property of the link:file_info_response.html[file_info_response] . This avoids an excessive amount of duplicated information when a link:get-storage-volumes-files-.html[GET  /storage/volumes/{volume.uuid}/files/\{path}]  call returns a large collection.
 
 
 |bytes_used
@@ -201,7 +212,7 @@ a|
 ====
 [source,json,subs=+macros]
 {
-  "accessed_time": "2019-06-12 11:00:16 -0400",
+  "accessed_time": "2019-06-12 15:00:16 +0000",
   "analytics": {
     "by_accessed_time": {
       "bytes_used": {
@@ -274,8 +285,8 @@ a|
     "subdir_count": 35
   },
   "bytes_used": 4096,
-  "changed_time": "2019-06-12 11:00:16 -0400",
-  "creation_time": "2019-06-12 11:00:16 -0400",
+  "changed_time": "2019-06-12 15:00:16 +0000",
+  "creation_time": "2019-06-12 15:00:16 +0000",
   "fill_enabled": true,
   "group_id": 30,
   "hard_links_count": 1,
@@ -285,7 +296,7 @@ a|
   "is_junction": "",
   "is_snapshot": "",
   "is_vm_aligned": "",
-  "modified_time": "2019-06-12 11:00:16 -0400",
+  "modified_time": "2019-06-12 15:00:16 +0000",
   "name": "test_file",
   "overwrite_enabled": true,
   "owner_id": 54738,
@@ -619,7 +630,7 @@ Additional file system analytics information summarizing all descendents of a di
 
 This property is only populated if file system analytics is enabled on the containing volume.
 
-In the context of the `records` property of a link:file-info-response(#model-file-info-response),analyticsobjectswillonlyincludepropertiesthatmayvarybetweenelementswithinthecollection.forexample,theanalyticsobjectswillnotcontainhistogramlabels,sincethesamehistogramlabelsareusedforallelementswithinthecollection.theinvariantinformationisinsteadavailableviatheanalyticspropertyofthefile-info-response(#model-file-info-response).thisavoidsanexcessiveamountofduplicatedinformationwhenaget-storage-volumes-files-.html<<model-file_info_response,file_info_response>>, analytics objects will only include properties that may vary between elements within the collection. For example, the analytics objects will not contain histogram labels, since the same histogram labels are used for all elements within the collection. The invariant information is instead available via the analytics property of the <<model-file_info_response,file_info_response>>. This avoids an excessive amount of duplicated information when a [GET  /storage/volumes/{volume.uuid}/files/\{path}]  call returns a large collection.
+In the context of the `records` property of a link:file_info_response.html[file_info_response] , analytics objects will only include properties that may vary between elements within the collection. For example, the analytics objects will not contain histogram labels, since the same histogram labels are used for all elements within the collection. The invariant information is instead available via the `analytics` property of the link:file_info_response.html[file_info_response] . This avoids an excessive amount of duplicated information when a link:get-storage-volumes-files-.html[GET  /storage/volumes/{volume.uuid}/files/\{path}]  call returns a large collection.
 
 
 [cols=3*,options=header]
@@ -745,7 +756,7 @@ a|Additional file system analytics information summarizing all descendents of a 
 
 This property is only populated if file system analytics is enabled on the containing volume.
 
-In the context of the `records` property of a link:file-info-response(#model-file-info-response),analyticsobjectswillonlyincludepropertiesthatmayvarybetweenelementswithinthecollection.forexample,theanalyticsobjectswillnotcontainhistogramlabels,sincethesamehistogramlabelsareusedforallelementswithinthecollection.theinvariantinformationisinsteadavailableviatheanalyticspropertyofthefile-info-response(#model-file-info-response).thisavoidsanexcessiveamountofduplicatedinformationwhenaget-storage-volumes-files-.html<<model-file_info_response,file_info_response>>, analytics objects will only include properties that may vary between elements within the collection. For example, the analytics objects will not contain histogram labels, since the same histogram labels are used for all elements within the collection. The invariant information is instead available via the analytics property of the <<model-file_info_response,file_info_response>>. This avoids an excessive amount of duplicated information when a [GET  /storage/volumes/{volume.uuid}/files/\{path}]  call returns a large collection.
+In the context of the `records` property of a link:file_info_response.html[file_info_response] , analytics objects will only include properties that may vary between elements within the collection. For example, the analytics objects will not contain histogram labels, since the same histogram labels are used for all elements within the collection. The invariant information is instead available via the `analytics` property of the link:file_info_response.html[file_info_response] . This avoids an excessive amount of duplicated information when a link:get-storage-volumes-files-.html[GET  /storage/volumes/{volume.uuid}/files/\{path}]  call returns a large collection.
 
 
 |bytes_used

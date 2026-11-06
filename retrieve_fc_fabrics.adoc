@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_fc_fabrics.html'
+keywords: 'fibre channel,zoneset zones,fabric switches,wwpn device,fc network'
 summary: 'Retrieve FC fabrics'
 ---
 
 = Retrieve FC fabrics
+:imagesdir: ./media/
 
-
+[.lead]
+Access the Fibre Channel fabric REST APIs to retrieve detailed FC network information, including connections, switch configurations, and active zonesets. Use these endpoints to efficiently gather data from a cache that updates asynchronously, reducing the time needed to obtain comprehensive fabric details.
 
 == Overview
 

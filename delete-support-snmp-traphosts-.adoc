@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-support-snmp-traphosts-.html'
+keywords: 'snmp traphost,delete traphost,remove snmp,traphost management,network monitoring,snmp configuration'
 summary: 'Delete an SNMP traphost'
 ---
 
 = Delete an SNMP traphost
+:imagesdir: ./media/
+
+[.lead]
+Removes an SNMP traphost, which is useful when you need to manage or update your SNMP configuration settings.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/support/snmp/traphosts/{host}`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Deletes an SNMP traphost.
 

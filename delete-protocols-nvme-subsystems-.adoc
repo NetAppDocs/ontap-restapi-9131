@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-nvme-subsystems-.html'
+keywords: 'nvme subsystem,subsystem removal,delete nvme,remove nvme,uuid deletion,nvme hosts'
 summary: 'Remove an NVMe subsystem'
 ---
 
 = Remove an NVMe subsystem
+:imagesdir: ./media/
+
+[.lead]
+Removes an NVMe subsystem to manage NVMe protocol configurations and free up resources associated with the subsystem.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/nvme/subsystems/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Removes an NVMe subsystem.
+ONTAP 9.6
 
 == Related ONTAP commands
 

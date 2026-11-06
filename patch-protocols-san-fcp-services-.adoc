@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-protocols-san-fcp-services-.html'
+keywords: 'fc protocol,service update,fcp modify,fcp start,fcp stop,svm service'
 summary: 'Update an FC protocol service'
 ---
 
 = Update an FC protocol service
+:imagesdir: ./media/
+
+[.lead]
+Updates an FC protocol service to modify its configuration based on your specific requirements. This allows you to manage the settings of the service effectively within your storage environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/protocols/san/fcp/services/{svm.uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Updates an FC Protocol service.
+ONTAP 9.6
 
 == Related ONTAP commands
 
@@ -103,7 +110,7 @@ a|
       "total": 1000,
       "write": 100
     },
-    "timestamp": "2017-01-25 06:20:13 -0500"
+    "timestamp": "2017-01-25 11:20:13 +0000"
   },
   "statistics": {
     "iops_raw": {
@@ -122,7 +129,7 @@ a|
       "total": 1000,
       "write": 100
     },
-    "timestamp": "2017-01-25 06:20:13 -0500"
+    "timestamp": "2017-01-25 11:20:13 +0000"
   },
   "svm": {
     "name": "svm1",

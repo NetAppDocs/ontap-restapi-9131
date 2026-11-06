@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-ipsec-ca-certificates.html'
+keywords: 'ipsec certificate,ca certificate,add certificate,cluster security,ontap ipsec'
 summary: 'Add a CA certificate to IPsec'
 ---
 
 = Add a CA certificate to IPsec
+:imagesdir: ./media/
+
+[.lead]
+Adds a CA certificate to IPsec, which is necessary for establishing secure IPsec connections.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/ipsec/ca-certificates`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Add CA certificate to IPsec. The CA certificate should already be installed on the cluster prior to adding them to IPsec.
 The CA certificate can be installed on the cluster using the /security/certificates endpoint.

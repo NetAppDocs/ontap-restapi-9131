@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_s3_service_bucket_configuration.html'
+keywords: 's3 bucket configuration,s3 server management,access policy permissions,bucket lifecycle rules,qos policy'
 summary: 'Manage S3 service bucket configuration'
 ---
 
 = Manage S3 service bucket configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Configure S3 buckets through these endpoints to define object namespaces and manage access policies. Utilize these endpoints to create, update, and delete buckets, effectively controlling object storage and permissions for different users on an S3 server.
 
 == Overview
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-storage-luns-attributes.html'
+keywords: 'add attribute,lun attributes,storage luns,lun management,attribute name'
 summary: 'Add an attribute to a LUN'
 ---
 
 = Add an attribute to a LUN
+:imagesdir: ./media/
+
+[.lead]
+Adds an attribute to a LUN by specifying its name and value, enhancing the LUN's metadata configuration.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/storage/luns/{lun.uuid}/attributes`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Adds an attribute to a LUN.
+ONTAP 9.10
 
 == Required properties
 

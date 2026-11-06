@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_shelves.html'
+keywords: 'storage shelves,netapp shelves,shelf information,cluster shelves,shelf modification'
 summary: 'Manage shelves'
 ---
 
 = Manage shelves
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve storage shelf information using these endpoints to access details about all shelves within the cluster.
 
 == Retrieving storage shelf information
 

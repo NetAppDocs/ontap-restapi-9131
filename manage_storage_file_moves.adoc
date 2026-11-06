@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_file_moves.html'
+keywords: 'file move,flexvol,flexgroup,storage cluster,move operation'
 summary: 'Manage storage file moves'
 ---
 
 = Manage storage file moves
+:imagesdir: ./media/
 
-
+[.lead]
+Initiate and monitor file move operations between FlexVol volumes or within FlexGroup volumes using this API. Retrieve the status of ongoing file move activities across the cluster for efficient data management and organization.
 
 == Overview
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-file-security-effective-permissions-.html'
+keywords: 'effective permissions,file security,file permissions,security permissions,svm uuid,file path'
 summary: 'Retrieve effective security permissions on a file'
 ---
 
 = Retrieve effective security permissions on a file
+:imagesdir: ./media/
+
+[.lead]
+Accesses the effective security permissions on a file to review the current permissions applied within the system. Use this endpoint to verify and audit file security settings for compliance and management purposes.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/file-security/effective-permissions/{svm.uuid}/{path}`#
 
-*Introduced In:* 9.8
+== Introduced in
+
+ONTAP 9.8
+
+== Usage notes
 
 Retrieves effective security permissions on a file.
 

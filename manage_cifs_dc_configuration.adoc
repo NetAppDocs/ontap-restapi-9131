@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cifs_dc_configuration.html'
+keywords: 'cifs domain,preferred dc,svm configuration,create configuration,delete configuration'
 summary: 'Manage CIFS DC configuration'
 ---
 
 = Manage CIFS DC configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Use the CIFS domain preferred DC configuration endpoints to manage domain controller settings for a specific SVM. These endpoints allow you to retrieve, create, and delete configurations, providing flexibility in managing your CIFS environment.
 
 == Overview
 

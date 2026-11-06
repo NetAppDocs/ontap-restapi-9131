@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'add,_remove,_or_discover_lun_map_reporting_nodes.html'
+keywords: 'lun map,reporting nodes,selective lun map,ontap san,high availability'
 summary: 'Add, remove, or discover LUN map reporting nodes'
 ---
 
 = Add, remove, or discover LUN map reporting nodes
+:imagesdir: ./media/
 
-
+[.lead]
+Use the LUN map reporting nodes REST API to manage the reporting nodes for a LUN map within your ONTAP cluster. By adjusting the reporting nodes, you can optimize network paths to mapped LUNs using the Selective LUN Map feature. This configuration helps maintain efficient access and connectivity for SAN protocols.
 
 == Overview
 

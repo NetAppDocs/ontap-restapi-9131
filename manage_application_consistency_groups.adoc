@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_application_consistency_groups.html'
+keywords: 'snapshot copy,volume management,consistency group,single volume,crash consistent'
 summary: 'Manage application consistency groups'
 ---
 
 = Manage application consistency groups
+:imagesdir: ./media/
 
-
+[.lead]
+Consistency group APIs manage volumes collectively to ensure operations like snapshots are performed at the same point in time across all member volumes. Use these endpoints when your applications span multiple volumes and require synchronized operations, ensuring data consistency and integrity.
 
 == Overview
 

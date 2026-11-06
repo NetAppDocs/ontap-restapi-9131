@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-nfs-connected-clients.html'
+keywords: 'nfs configuration,connected clients,svm configuration,export policy,nfs svm'
 summary: 'Retrieve the NFS configuration for an SVM'
 ---
 
 = Retrieve the NFS configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the NFS configuration for a specific SVM, which provides details on the current network file system settings. This information is essential for managing access and optimizing file sharing within your storage environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/nfs/connected-clients`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Retrieves the NFS configuration of SVMs.
 

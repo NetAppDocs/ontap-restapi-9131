@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-cluster-sensors.html'
+keywords: 'environment sensors,threshold filter,sensor type,node uuid,cluster sensors,node name'
 summary: 'Retrieve environment sensors'
 ---
 
 = Retrieve environment sensors
+:imagesdir: ./media/
+
+[.lead]
+Retrieves information about environment sensors, which helps you monitor and manage environmental conditions effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cluster/sensors`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Retrieve Environment Sensors
 

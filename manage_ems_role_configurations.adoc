@@ -3,19 +3,22 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_ems_role_configurations.html'
+keywords: 'ems role configurations,access control role,storage admin,event filter,role-based configuration'
 summary: 'Manage EMS role configurations'
 ---
 
 = Manage EMS role configurations
+:imagesdir: ./media/
 
-
+[.lead]
+Manage EMS role configurations to control access permissions for specific roles within your system. Utilize these endpoints to retrieve, update, or remove role-based settings as needed for your access control requirements.
 
 == Overview
 
 Manages the EMS role-based configuration of a specific access control role.
 
 ##
-See the documentation for <<docs-support-support_ems_role-configs,/support/ems/role-configs>> for details on the various properties.
+See the documentation for link:getting_started_with_the_ontap_rest_api.html#docs-support-support_ems_role-configs[/support/ems/role-configs] for details on the various properties.
 
 == Examples
 

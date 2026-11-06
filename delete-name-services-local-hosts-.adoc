@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-name-services-local-hosts-.html'
+keywords: 'local hosts,delete host,host object,owner uuid,ip address'
 summary: 'Delete an existing host object'
 ---
 
 = Delete an existing host object
+:imagesdir: ./media/
+
+[.lead]
+Deletes a host object, removing it from the system permanently. Use this endpoint when you need to clear obsolete or incorrect host entries from the environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/name-services/local-hosts/{owner.uuid}/{address}`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Deletes an existing host object.
 

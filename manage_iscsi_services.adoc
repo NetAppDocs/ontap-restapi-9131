@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_iscsi_services.html'
+keywords: 'iscsi services, svms iscsi, target alias, iscsi performance, iscsi initiators'
 summary: 'Manage iSCSI services'
 ---
 
 = Manage iSCSI services
+:imagesdir: ./media/
 
-
+[.lead]
+Use the iSCSI service endpoints to define and manage iSCSI target properties for SVMs. These endpoints support operations such as creating, updating, disabling, and deleting iSCSI services, crucial for setting up and controlling iSCSI connections within your ONTAP environment.
 
 == Overview
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-volumes-.html'
+keywords: 'volume retrieval,quota state,flexvol,flexgroup,volume properties,fields query'
 summary: 'Retrieve a volume'
 ---
 
 = Retrieve a volume
+:imagesdir: ./media/
+
+[.lead]
+Retrieves information about a volume to understand its current state and quota configuration, whether it's a FlexVol or a FlexGroup volume. This operation helps you manage and monitor storage resources effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/volumes/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves a volume. The GET API can be used to retrieve the quota state for a FlexVol or a FlexGroup volume.
 
@@ -537,7 +548,7 @@ a|Unique identifier for the volume. This corresponds to the instance-uuid that i
             "href": "/api/resourcelink"
           }
         },
-        "time": "2021-06-01 11:06:41 -0400"
+        "time": "2021-06-01 15:06:41 +0000"
       }
     ],
     "dry_run_start_time": "string",
@@ -649,7 +660,7 @@ a|Unique identifier for the volume. This corresponds to the instance-uuid that i
       }
     }
   ],
-  "create_time": "2018-06-04 15:00:00 -0400",
+  "create_time": "2018-06-04 19:00:00 +0000",
   "efficiency": {
     "application_io_size": "string",
     "auto_state": "string",
@@ -693,7 +704,7 @@ a|Unique identifier for the volume. This corresponds to the instance-uuid that i
     "volume_path": "string"
   },
   "encryption": {
-    "key_create_time": "2022-01-01 14:00:00 -0500",
+    "key_create_time": "2022-01-01 19:00:00 +0000",
     "key_id": "string",
     "state": "string",
     "status": {
@@ -738,7 +749,7 @@ a|Unique identifier for the volume. This corresponds to the instance-uuid that i
         "write": 100
       },
       "status": "ok",
-      "timestamp": "2017-01-25 06:20:13 -0500"
+      "timestamp": "2017-01-25 11:20:13 +0000"
     },
     "duration": "PT15S",
     "flexcache": {
@@ -746,7 +757,7 @@ a|Unique identifier for the volume. This corresponds to the instance-uuid that i
       "cache_miss_percent": 20,
       "duration": "PT1D",
       "status": "ok",
-      "timestamp": "2017-01-25 06:20:13 -0500"
+      "timestamp": "2017-01-25 11:20:13 +0000"
     },
     "iops": {
       "read": 200,
@@ -764,7 +775,7 @@ a|Unique identifier for the volume. This corresponds to the instance-uuid that i
       "total": 1000,
       "write": 100
     },
-    "timestamp": "2017-01-25 06:20:13 -0500"
+    "timestamp": "2017-01-25 11:20:13 +0000"
   },
   "movement": {
     "cutover_window": 30,
@@ -778,7 +789,7 @@ a|Unique identifier for the volume. This corresponds to the instance-uuid that i
       "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
     },
     "percent_complete": 0,
-    "start_time": "2020-12-07 03:45:12 -0500",
+    "start_time": "2020-12-07 08:45:12 +0000",
     "state": "replicating",
     "tiering_policy": "string"
   },
@@ -839,9 +850,9 @@ a|Unique identifier for the volume. This corresponds to the instance-uuid that i
           "code": 0,
           "destination": 0,
           "file_id": 0,
-          "time": "2018-06-04 15:00:00 -0400"
+          "time": "2018-06-04 19:00:00 +0000"
         },
-        "most_recent_start_time": "2018-06-04 15:00:00 -0400"
+        "most_recent_start_time": "2018-06-04 19:00:00 +0000"
       },
       "scanner": {
         "blocks_scanned": 0,
@@ -906,7 +917,7 @@ a|Unique identifier for the volume. This corresponds to the instance-uuid that i
   "snaplock": {
     "append_mode_enabled": "",
     "autocommit_period": "P30M",
-    "compliance_clock_time": "2018-06-04 15:00:00 -0400",
+    "compliance_clock_time": "2018-06-04 19:00:00 +0000",
     "expiry_time": "Wed Sep  5 11:02:42 GMT 2018",
     "is_audit_log": 1,
     "litigation_count": 10,
@@ -1312,13 +1323,13 @@ a|Unique identifier for the volume. This corresponds to the instance-uuid that i
         "write": 100
       },
       "status": "ok",
-      "timestamp": "2017-01-25 06:20:13 -0500"
+      "timestamp": "2017-01-25 11:20:13 +0000"
     },
     "flexcache_raw": {
       "cache_miss_blocks": 10,
       "client_requested_blocks": 500,
       "status": "ok",
-      "timestamp": "2017-01-25 06:20:13 -0500"
+      "timestamp": "2017-01-25 11:20:13 +0000"
     },
     "iops_raw": {
       "read": 200,
@@ -1652,7 +1663,7 @@ a|Unique identifier for the volume. This corresponds to the instance-uuid that i
       "total": 1000,
       "write": 100
     },
-    "timestamp": "2017-01-25 06:20:13 -0500"
+    "timestamp": "2017-01-25 11:20:13 +0000"
   },
   "status": [
     "string"

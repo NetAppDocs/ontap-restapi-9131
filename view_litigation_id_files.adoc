@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_litigation_id_files.html'
+keywords: 'litigation files,litigation id,ontap reference,ontap files,litigation list'
 summary: 'View litigation ID files'
 ---
 
 = View litigation ID files
+:imagesdir: ./media/
 
-
+[.lead]
+Access a list of files associated with a specified litigation ID to review and manage the items relevant to your legal processes.
 
 Displays the list of files under the specified litigation ID.
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-support-ems-destinations.html'
+keywords: 'event destination,create destination,event notification,destination filters,syslog configuration'
 summary: 'Create an event destination'
 ---
 
 = Create an event destination
+:imagesdir: ./media/
+
+[.lead]
+Creates an event destination, specifying necessary properties like name and type to define where and how event notifications are sent. This setup helps direct event notifications to desired locations for monitoring or logging purposes.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/support/ems/destinations`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates an event destination.
+ONTAP 9.6
 
 == Required properties
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-audit-object-store.html'
+keywords: 's3 audit,object store,audit configuration,s3 logs,log retention,log rotation'
 summary: 'Create an S3 audit configuration'
 ---
 
 = Create an S3 audit configuration
+:imagesdir: ./media/
+
+[.lead]
+Creates an S3 audit configuration to define how audit logs are stored and managed within the owning SVM namespace. Use this endpoint when you need to specify custom logging behavior for S3 operations.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/audit/{svm.uuid}/object-store`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Creates an S3 audit configuration.
+ONTAP 9.10
 
 == Required properties
 

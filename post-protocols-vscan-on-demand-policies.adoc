@@ -3,16 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-vscan-on-demand-policies.html'
+keywords: 'vscan policy,svm policy,data svm,vscan schedule,scan extensions,scan paths'
 summary: 'Create a Vscan On-Demand policy'
 ---
 
 = Create a Vscan On-Demand policy
+:imagesdir: ./media/
+
+[.lead]
+Creates a Vscan On-Demand policy to scan specified paths for viruses within a data SVM. This is useful when you need to ensure that the files in targeted directories are free from viruses, particularly before critical operations.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/vscan/{svm.uuid}/on-demand-policies`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates a Vscan On-Demand policy. Created only on a data SVM.
+ONTAP 9.6
+
+== Usage notes
+
+Created only on a data SVM.
 
 Important notes:
 

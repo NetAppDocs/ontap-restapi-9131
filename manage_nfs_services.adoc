@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_nfs_services.html'
+keywords: 'nfs configuration,nfs services,mount permissions,snapshot management,performance monitoring'
 summary: 'Manage NFS services'
 ---
 
 = Manage NFS services
+:imagesdir: ./media/
 
-
+[.lead]
+Manage NFS services to configure, retrieve, and modify NFS settings within your ONTAP environment. Use these endpoints to define mount permissions, create or update NFS configurations, and monitor protocol performance metrics for your storage virtual machines (SVMs).
 
 === Retrieving an NFS configuration
 

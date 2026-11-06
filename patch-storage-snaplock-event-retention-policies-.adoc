@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-storage-snaplock-event-retention-policies-.html'
+keywords: 'snaplock retention,retention policy,event retention,ebr policy,snaplock modify,snaplock update'
 summary: 'Update the retention period of an EBR policy'
 ---
 
 = Update the retention period of an EBR policy
+:imagesdir: ./media/
+
+[.lead]
+Updates the retention period of an Event Based Retention (EBR) policy to adjust how long events are retained. This is useful when you need to modify the duration to comply with changing data retention requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/storage/snaplock/event-retention/policies/{policy.name}`#
 
-*Introduced In:* 9.7
+== Introduced in
 
-Updates the retention period of an Event Based Retention (EBR) policy.
+ONTAP 9.7
 
 == Related ONTAP commands
 

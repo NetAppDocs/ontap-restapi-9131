@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-security-key-manager-configs.html'
+keywords: 'key manager,retrieve configurations,key manager config,security configurations,ontap security,key manager settings'
 summary: 'Retrieve key manager configurations'
 ---
 
 = Retrieve key manager configurations
+:imagesdir: ./media/
+
+[.lead]
+Retrieves key manager configurations to view the current setup of key management systems in your environment. This is useful for ensuring that your security configurations align with organizational requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/security/key-manager-configs`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Retrieves key manager configurations.
+ONTAP 9.10
 
 == Related ONTAP commands
 

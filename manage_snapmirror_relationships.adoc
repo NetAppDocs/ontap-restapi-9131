@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_snapmirror_relationships.html'
+keywords: 'snapmirror relationships,flexvol volumes,flexgroup volumes,zero rpo,synchronous relationship,application consistency'
 summary: 'Manage SnapMirror relationships'
 ---
 
 = Manage SnapMirror relationships
+:imagesdir: ./media/
 
-
+[.lead]
+Manage SnapMirror relationships to establish asynchronous or synchronous data protection for FlexVol volumes, FlexGroup volumes, SVMs, and Application Consistency Groups. Use these endpoints to configure automated failover and ensure zero RPO and RTO data protection across clustered environments.
 
 == Overview
 

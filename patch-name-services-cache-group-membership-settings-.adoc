@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-name-services-cache-group-membership-settings-.html'
+keywords: 'group membership,cache setting,svm uuid,update setting,name services'
 summary: 'Update a group membership cache setting'
 ---
 
 = Update a group membership cache setting
+:imagesdir: ./media/
+
+[.lead]
+Updates a group membership cache setting to modify the cache behavior for group membership information. This action is useful when you need to adjust how group membership data is stored or retrieved in your ONTAP environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/name-services/cache/group-membership/settings/{svm.uuid}`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Updates a group-membership cache setting.
 

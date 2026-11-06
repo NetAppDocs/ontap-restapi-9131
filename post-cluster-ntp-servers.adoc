@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-cluster-ntp-servers.html'
+keywords: 'external ntp,ntp server,cluster configuration,time server,ontap nodes,validate ntp'
 summary: 'Validate an external NTP time server'
 ---
 
 = Validate an external NTP time server
+:imagesdir: ./media/
+
+[.lead]
+Validates an external NTP time server to ensure it is suitable for use and configure ONTAP to apply it across all nodes in the cluster.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cluster/ntp/servers`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Validates the provided external NTP time server for usage and configures ONTAP so that all nodes in the cluster use it.
 The required fields are:

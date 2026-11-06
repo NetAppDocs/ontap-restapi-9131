@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-volumes-top-metrics-directories.html'
+keywords: 'volume metrics,directory performance,capacity metric,volume uuid,top metric,performance data'
 summary: 'Retrieve directories with the greatest value performance metric or capacity metric'
 ---
 
 = Retrieve directories with the greatest value performance metric or capacity metric
+:imagesdir: ./media/
+
+[.lead]
+Accesses a list of directories ranked by their highest performance or capacity metrics, which helps you identify directories that may require attention or optimization.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/volumes/{volume.uuid}/top-metrics/directories`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Retrieves a list of directories with the greatest value performance metric or capacity metric.
 

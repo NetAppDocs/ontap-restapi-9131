@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_nvme_subsystems.html'
+keywords: 'nvme subsystems,nvme hosts,nvme namespaces,subsystem configuration,nvme subsystem management'
 summary: 'Manage NVMe subsystems'
 ---
 
 = Manage NVMe subsystems
+:imagesdir: ./media/
 
-
+[.lead]
+Utilize the NVMe subsystem endpoints to manage configuration and access control for NVMe-connected hosts. These endpoints enable you to create, update, and delete subsystems, as well as manage hosts and namespace mappings within your ONTAP environment.
 
 == Overview
 

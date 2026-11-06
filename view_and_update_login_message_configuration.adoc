@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_and_update_login_message_configuration.html'
+keywords: 'login messages,cluster scope,message of the day,login banner,svm messages'
 summary: 'View and update login message configuration'
 ---
 
 = View and update login message configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Manage the configuration of login messages in your ONTAP cluster using this group of endpoints. Retrieve, update, or clear login messages by UUID or scope to display essential information to users accessing the system.
 
 == Overview
 

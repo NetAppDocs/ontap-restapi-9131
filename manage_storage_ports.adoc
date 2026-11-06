@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_ports.html'
+keywords: 'storage ports,netapp ontap,cluster storage,port management,storage configuration'
 summary: 'Manage storage ports'
 ---
 
 = Manage storage ports
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve storage port information to access details about all storage ports within your cluster. Use these endpoints to efficiently manage and monitor the connectivity status and configuration of each storage port.
 
 == Retrieving storage port information
 

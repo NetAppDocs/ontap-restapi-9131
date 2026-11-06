@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_autosupport_configuration.html'
+keywords: 'autosupport configuration,netapp call home,autosupport connectivity,modify autosupport,autosupport smtp'
 summary: 'Manage AutoSupport configuration'
 ---
 
 = Manage AutoSupport configuration
+:imagesdir: ./media/
 
-
+[.lead]
+AutoSupport configuration endpoints manage the *call home* mechanism, sending cluster configuration, status, and error reporting details to NetApp. Use GET calls to retrieve current AutoSupport settings and PATCH calls to modify them. Additionally, GET calls can check for connectivity issues within AutoSupport, which might require corrective actions on the ONTAP CLI.
 
 == Overview
 

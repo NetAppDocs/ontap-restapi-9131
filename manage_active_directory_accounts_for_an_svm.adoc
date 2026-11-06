@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_active_directory_accounts_for_an_svm.html'
+keywords: 'active directory,account management,svm details,organizational unit,delete account'
 summary: 'Manage Active Directory accounts for an SVM'
 ---
 
 = Manage Active Directory accounts for an SVM
+:imagesdir: ./media/
 
-
+[.lead]
+Access and manipulate Active Directory account details for a specified SVM using these endpoints. You can display, update, or remove account information to manage directory services within your ONTAP environment.
 
 == Overview
 

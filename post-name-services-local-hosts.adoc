@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-name-services-local-hosts.html'
+keywords: 'local hosts,ip mapping,hostname mapping,svm host,ip address,canonical hostname'
 summary: 'Create a new IP to hostname mapping'
 ---
 
 = Create a new IP to hostname mapping
+:imagesdir: ./media/
+
+[.lead]
+Creates a new IP to hostname mapping to associate an IP address with a canonical hostname in an existing SVM. Use this when you need to manage DNS entries within your network configuration.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/name-services/local-hosts`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Creates a new IP to hostname mapping.
+ONTAP 9.10
 
 == Required properties
 

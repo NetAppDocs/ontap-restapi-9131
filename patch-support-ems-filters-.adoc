@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-support-ems-filters-.html'
+keywords: 'event filter,filter update,event rule,filter criteria,rename filter,filter management'
 summary: 'Update an event filter'
 ---
 
 = Update an event filter
+:imagesdir: ./media/
+
+[.lead]
+Updates an event filter by modifying its name or criteria to tailor how events are captured and processed according to your needs.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/support/ems/filters/{name}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Updates an event filter.
+ONTAP 9.6
 
 == Recommended optional properties
 
