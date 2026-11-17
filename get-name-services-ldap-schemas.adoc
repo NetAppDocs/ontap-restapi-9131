@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-name-services-ldap-schemas.html'
+keywords: 'ldap schemas,ldap schema retrieval,name services,ontap ldap,vserver ldap'
 summary: 'Retrieve all LDAP schemas'
 ---
 
 = Retrieve all LDAP schemas
+:imagesdir: ./media/
+
+[.lead]
+Retrieves all LDAP schemas to view the schema configurations currently defined in your ONTAP environment. This helps you ensure that LDAP integration aligns with your directory service requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/name-services/ldap-schemas`#
 
-*Introduced In:* 9.11
+== Introduced in
 
-Retrieves all the LDAP schemas.
+ONTAP 9.11
 
 == Related ONTAP commands
 

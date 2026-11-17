@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_specific_storage_pools.html'
+keywords: 'storage pools,modify properties,update storage,expand storage,delete storage'
 summary: 'Manage specific storage pools'
 ---
 
 = Manage specific storage pools
+:imagesdir: ./media/
 
-
+[.lead]
+Use endpoints to manage and update storage pool properties within your ONTAP environment. Modify attributes such as the name, disk count, and spare allocation units, with support for simulated expansions to project future capacity changes. Ensure no ongoing modifications before initiating PATCH operations.
 
 == Updating storage pools
 

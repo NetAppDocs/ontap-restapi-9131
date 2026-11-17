@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-cluster-schedules.html'
+keywords: 'cluster schedules,retrieve schedule,svm filter,scope filter,interval filter,order results'
 summary: 'Retrieve schedules'
 ---
 
 = Retrieve schedules
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a schedule to manage and automate recurring tasks within your ONTAP environment. This helps in maintaining efficient operations by ensuring tasks are executed at specified intervals.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cluster/schedules`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves a schedule.
-
+ONTAP 9.6
 
 == Parameters
 

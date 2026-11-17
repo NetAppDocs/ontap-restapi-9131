@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_fpolicy_engine_configuration.html'
+keywords: 'fpolicy configuration,file access notifications,external servers,engine type,notification format'
 summary: 'Manage FPolicy engine configuration'
 ---
 
 = Manage FPolicy engine configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Configure the FPolicy engine to control how file access notifications are sent to external servers. Use these endpoints to set up primary and secondary servers, define the engine type, specify notification formats, and manage port settings for your FPolicy application.
 
 == Overview
 

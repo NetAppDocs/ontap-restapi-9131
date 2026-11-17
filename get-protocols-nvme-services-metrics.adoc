@@ -3,17 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-nvme-services-metrics.html'
+keywords: 'nvme protocol,performance metrics,svm metrics,historical metrics,throughput,latency'
 summary: 'Retrieve NVMe protocol historical performance metrics'
 ---
 
 = Retrieve NVMe protocol historical performance metrics
+:imagesdir: ./media/
+
+[.lead]
+Retrieves historical performance metrics for the NVMe protocol of an SVM. This information helps you analyze past performance trends and optimize protocol usage.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/nvme/services/{svm.uuid}/metrics`#
 
-*Introduced In:* 9.7
+== Introduced in
 
-Retrieves historical performance metrics for NVMe protocol of an SVM.
-
+ONTAP 9.7
 
 == Parameters
 
@@ -531,7 +537,7 @@ a|
         "total": 1000,
         "write": 100
       },
-      "timestamp": "2017-01-25 06:20:13 -0500"
+      "timestamp": "2017-01-25 11:20:13 +0000"
     }
   ]
 }

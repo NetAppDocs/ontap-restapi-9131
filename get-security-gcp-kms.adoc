@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-security-gcp-kms.html'
+keywords: 'google cloud kms,cluster configuration,svm configuration,key manager,gcp kms settings'
 summary: 'Retrieve a Google Cloud KMS configurations for all clusters and SVMs'
 ---
 
 = Retrieve a Google Cloud KMS configurations for all clusters and SVMs
+:imagesdir: ./media/
+
+[.lead]
+Retrieves Google Cloud KMS configurations for all clusters and SVMs to view existing key management settings across your environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/security/gcp-kms`#
 
-*Introduced In:* 9.9
+== Introduced in
 
-Retrieves Google Cloud KMS configurations for all clusters and SVMs.
+ONTAP 9.9
 
 == Related ONTAP commands
 

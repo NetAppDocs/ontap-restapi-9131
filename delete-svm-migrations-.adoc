@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-svm-migrations-.html'
+keywords: 'svm migration,delete svm,svm removal,ontap svm,migration uuid,migration abort'
 summary: 'Delete SVM migrations'
 ---
 
 = Delete SVM migrations
+:imagesdir: ./media/
+
+[.lead]
+Deletes SVM migrations to remove migration operations that are no longer needed or completed.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/svm/migrations/{uuid}`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Deletes the SVM migration.
 

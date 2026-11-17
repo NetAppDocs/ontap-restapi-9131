@@ -2,13 +2,16 @@
 sidebar: sidebar
 api: true
 explorer: false
-permalink: 'view_and_update_cifs_domain-related_information_(specific_svm).html'
+permalink: 'view_and_update_cifs_domain-related_information_specific_svm_.html'
+keywords: 'cifs domain,svm configuration,server discovery,trust relationships,password schedule,preferred dcs'
 summary: 'View and update CIFS domain-related information (specific SVM)'
 ---
 
 = View and update CIFS domain-related information (specific SVM)
+:imagesdir: ./media/
 
-
+[.lead]
+Access and modify CIFS domain-related configurations for a specified Storage Virtual Machine (SVM). Use these endpoints to retrieve detailed information about trusted domains, discovered servers, and password schedules within your CIFS environment.
 
 == Overview
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-protocols-active-directory-.html'
+keywords: 'active directory,modify active directory,svm account,active directory account,task status,svm uuid'
 summary: 'Modify an Active Directory account for an SVM'
 ---
 
 = Modify an Active Directory account for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Modifies the Active Directory account for a specified SVM, updating its configuration as needed. Use this operation when changes to the Active Directory integration are required.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/protocols/active-directory/{svm.uuid}`#
 
-*Introduced In:* 9.12
+== Introduced in
+
+ONTAP 9.12
+
+== Usage notes
 
 Modifies the Active Directory account for a given SVM.
 

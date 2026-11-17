@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-volumes-snapshots-.html'
+keywords: 'snapshot details,volume snapshot,snapshot copy,volume uuid,snapshot uuid'
 summary: 'Retrieve volume Snapshot copy details'
 ---
 
 = Retrieve volume Snapshot copy details
+:imagesdir: ./media/
+
+[.lead]
+Retrieves detailed information about a specific volume Snapshot copy. This is useful when you need to inspect the Snapshot's configuration or status.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/volumes/{volume.uuid}/snapshots/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves details of a specific volume Snapshot copy.
 
@@ -168,7 +179,7 @@ a|
     }
   },
   "comment": "string",
-  "create_time": "2019-02-04 14:00:00 -0500",
+  "create_time": "2019-02-04 19:00:00 +0000",
   "delta": {
     "_links": {
       "self": {
@@ -178,7 +189,7 @@ a|
     "size_consumed": 0,
     "time_elapsed": "string"
   },
-  "expiry_time": "2019-02-04 14:00:00 -0500",
+  "expiry_time": "2019-02-04 19:00:00 +0000",
   "logical_size": 1228800,
   "name": "this_snapshot",
   "owners": [
@@ -188,7 +199,7 @@ a|
     "uuid": "4cd8a442-86d1-11e0-ae1c-125648563413"
   },
   "size": "122880",
-  "snaplock_expiry_time": "2019-02-04 14:00:00 -0500",
+  "snaplock_expiry_time": "2019-02-04 19:00:00 +0000",
   "snapmirror_label": "string",
   "state": "string",
   "svm": {

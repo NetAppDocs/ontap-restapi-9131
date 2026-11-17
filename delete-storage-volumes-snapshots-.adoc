@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-storage-volumes-snapshots-.html'
+keywords: 'delete snapshot,volume snapshot,snapshot copy remove,volume snapshot delete,storage volume snapshot'
 summary: 'Delete a volume Snapshot copy'
 ---
 
 = Delete a volume Snapshot copy
+:imagesdir: ./media/
+
+[.lead]
+Deletes a volume Snapshot copy when you no longer need it for restoring data or saving space.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/storage/volumes/{volume.uuid}/snapshots/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Deletes a Volume Snapshot copy.
+ONTAP 9.6
 
 == Related ONTAP commands
 

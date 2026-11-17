@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-ndmp.html'
+keywords: 'ndmp mode,current ndmp,ndmp status,ndmp protocol,ndmp node'
 summary: 'Retrieve the current NDMP mode'
 ---
 
 = Retrieve the current NDMP mode
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the current NDMP mode, helping you understand the NDMP configuration status for your system.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/ndmp`#
 
-*Introduced In:* 9.7
+== Introduced in
 
-Retrieves the current NDMP mode.
+ONTAP 9.7
 
 == Related ONTAP commands
 

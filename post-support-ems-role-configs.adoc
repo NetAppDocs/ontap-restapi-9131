@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-support-ems-role-configs.html'
+keywords: 'ems role,role config,access control,event filter,global configs,create role'
 summary: 'Create role configurations'
 ---
 
 = Create role configurations
+:imagesdir: ./media/
+
+[.lead]
+Creates an EMS role-based configuration for an access control role, defining how the role interacts with event management settings. Use this endpoint to set up specific permissions and filters for roles in your system.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/support/ems/role-configs`#
 
-*Introduced In:* 9.13
+== Introduced in
 
-Creates an EMS role-based configuration for an access control role.
+ONTAP 9.13
 
 == Required properties
 

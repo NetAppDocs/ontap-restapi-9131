@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-bridges.html'
+keywords: 'storage bridges,retrieve bridges,ontap bridges,bridge collection,bridge filters'
 summary: 'Retrieve a collection of bridges'
 ---
 
 = Retrieve a collection of bridges
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a collection of bridges to review the current bridge configurations and their status within your storage environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/bridges`#
 
-*Introduced In:* 9.9
+== Introduced in
 
-Retrieves a collection of bridges.
+ONTAP 9.9
 
 == Related ONTAP commands
 
@@ -690,7 +697,7 @@ a|
           "message": "entry doesn't exist",
           "target": "uuid"
         },
-        "time": "2020-12-09 00:47:58 -0500"
+        "time": "2020-12-09 05:47:58 +0000"
       },
       "managed_by": "string",
       "model": "FibreBridge6500N",

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_directories.html'
+keywords: 'directories performance,retrieve directories,io metrics,read operations,volume activity'
 summary: 'Retrieve directories'
 ---
 
 = Retrieve directories
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve directories based on performance or capacity metrics to gain insights into IO activity or directory size within a specified volume. Use the `top_metric` parameter to filter directories by `iops`, `throughput`, or `non_recursive_bytes_used`, returning results in descending order for analysis.
 
 == Overview
 

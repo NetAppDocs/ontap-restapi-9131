@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-cluster-nodes.html'
+keywords: 'cluster nodes,add node,storage provision,network interface,node modify,service processor network'
 summary: 'Add a node or nodes to a cluster'
 ---
 
 = Add a node or nodes to a cluster
+:imagesdir: ./media/
+
+[.lead]
+Adds nodes to your cluster to expand its capacity and enhance its performance. Use this action when integrating new hardware into your existing infrastructure.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/cluster/nodes`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Adds a node or nodes to the cluster.
 
@@ -98,7 +109,7 @@ a|Controller information
 a|The current or "wall clock" time of the node in ISO-8601 date, time, and time zone format.
 The ISO-8601 date and time are localized based on the ONTAP cluster's timezone setting.
 
-* example: 2019-04-17 11:49:26 -0400
+* example: 2019-04-17 15:49:26 +0000
 * format: date-time
 * readOnly: 1
 * Introduced in: 9.6
@@ -285,7 +296,7 @@ a|
     "memory_size": 1024000000,
     "over_temperature": "string"
   },
-  "date": "2019-04-17 11:49:26 -0400",
+  "date": "2019-04-17 15:49:26 +0000",
   "ha": {
     "giveback": {
       "failure": {
@@ -1817,7 +1828,7 @@ a|Controller information
 a|The current or "wall clock" time of the node in ISO-8601 date, time, and time zone format.
 The ISO-8601 date and time are localized based on the ONTAP cluster's timezone setting.
 
-* example: 2019-04-17 11:49:26 -0400
+* example: 2019-04-17 15:49:26 +0000
 * format: date-time
 * readOnly: 1
 * Introduced in: 9.6

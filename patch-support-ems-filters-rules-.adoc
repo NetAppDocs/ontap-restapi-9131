@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-support-ems-filters-rules-.html'
+keywords: 'event filter,filter rule,event criteria,message criteria,parameter criteria,update rule'
 summary: 'Update an event filter rule'
 ---
 
 = Update an event filter rule
+:imagesdir: ./media/
+
+[.lead]
+Updates an event filter rule to modify the criteria that determine which events are matched by the rule. Use this to tailor event notifications to your specific monitoring needs.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/support/ems/filters/{name}/rules/{index}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Updates an event filter rule.
+ONTAP 9.6
 
 == Recommended optional properties
 

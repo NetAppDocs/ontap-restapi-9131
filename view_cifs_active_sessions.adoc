@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_cifs_active_sessions.html'
+keywords: 'cifs sessions,smb clients,active connections,session details,delete session'
 summary: 'View CIFS active sessions'
 ---
 
 = View CIFS active sessions
+:imagesdir: ./media/
 
-
+[.lead]
+Access the CIFS sessions endpoints to view and manage currently established SMB client connections. Use these endpoints to list, retrieve details, or remove active CIFS sessions across specific nodes and SVMs.
 
 == Overview
 

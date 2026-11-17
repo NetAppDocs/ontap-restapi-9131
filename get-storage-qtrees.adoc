@@ -3,16 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-qtrees.html'
+keywords: 'qtrees retrieval,flexvol volumes,flexgroup volumes,security style filter,unix permissions,statistics iops'
 summary: 'Retrieve qtrees'
 ---
 
 = Retrieve qtrees
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the qtrees configured for all FlexVol volumes or FlexGroup volumes. Use this endpoint to access specific qtree properties by using the appropriate query parameters.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/qtrees`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves qtrees configured for all FlexVol volumes or FlexGroup volumes.
+ONTAP 9.6
+
+== Usage notes
 
 Use the `fields` query parameter to retrieve all properties of the qtree. If the `fields` query parameter is not used, then GET returns the qtree `name` and qtree `id` only.
 
@@ -467,7 +476,7 @@ a|
           "total": 1000,
           "write": 100
         },
-        "timestamp": "2017-01-25 06:20:13 -0500"
+        "timestamp": "2017-01-25 11:20:13 +0000"
       },
       "svm": {
         "_links": {

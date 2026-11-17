@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-nvme-subsystems-.html'
+keywords: 'nvme subsystem,subsystem retrieval,unique identifier,fields query,computational cost'
 summary: 'Retrieve an NVMe subsystem'
 ---
 
 = Retrieve an NVMe subsystem
+:imagesdir: ./media/
+
+[.lead]
+Retrieves details about an NVMe subsystem to understand its configuration and properties. This information is useful for assessing subsystem settings or preparing for further NVMe management tasks.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/nvme/subsystems/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves an NVMe subsystem.
 

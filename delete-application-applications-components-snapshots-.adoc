@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-application-applications-components-snapshots-.html'
+keywords: 'snapshot delete,application component,maxdata applications,snapshot copy,component snapshot'
 summary: 'Delete an application component Snapshot copy'
 ---
 
 = Delete an application component Snapshot copy
+:imagesdir: ./media/
+
+[.lead]
+Deletes a Snapshot copy of an application component to manage and maintain specific states of your Maxdata template applications. Use this operation when you need to remove unnecessary or outdated component Snapshot copies.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/application/applications/{application.uuid}/components/{component.uuid}/snapshots/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Delete a Snapshot copy of an application component.
 

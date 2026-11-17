@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'name-services_endpoints.html'
+keywords: 'name services,dns resolution,nis configuration,ldap setup,network information'
 summary: 'ONTAP REST API name-services endpoints'
 ---
 
 = ONTAP REST API name-services endpoints
+:imagesdir: ./media/
 
-
+[.lead]
+Utilize name-services endpoints to manage user authentication and credential mapping in mixed environments. Configure NIS, LDAP, and DNS services to ensure proper resolution and information retrieval for ONTAP systems.
 
 == Overview
 

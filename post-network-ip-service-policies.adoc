@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-network-ip-service-policies.html'
+keywords: 'service policy,network interface,ipspace,svm scope,cluster scope'
 summary: 'Create a service policy for network interfaces'
 ---
 
 = Create a service policy for network interfaces
+:imagesdir: ./media/
+
+[.lead]
+Creates a service policy for network interfaces to define specific settings and behaviors for managing network traffic. This is useful when you need to control how network resources are allocated and used within your system.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/network/ip/service-policies`#
 
-*Introduced In:* 9.8
+== Introduced in
 
-Creates a service policy for network interfaces.
+ONTAP 9.8
 
 == Required properties
 

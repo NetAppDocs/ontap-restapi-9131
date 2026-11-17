@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cluster_configuration_backup_information.html'
+keywords: 'cluster configuration,configuration backup,backup settings,manage cluster,configuration settings'
 summary: 'Manage cluster configuration backup information'
 ---
 
 = Manage cluster configuration backup information
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve and update configuration backup settings to ensure your cluster's configuration data is properly backed up and maintained. Use these endpoints to view existing settings or modify them to meet your backup requirements.
 
 == Overview
 

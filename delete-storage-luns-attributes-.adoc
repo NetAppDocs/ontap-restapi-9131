@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-storage-luns-attributes-.html'
+keywords: 'lun attribute,delete lun attribute,storage luns,attribute removal,lun management'
 summary: 'Delete a LUN attribute'
 ---
 
 = Delete a LUN attribute
+:imagesdir: ./media/
+
+[.lead]
+Removes a LUN attribute to update or clean up the metadata associated with a specific LUN.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/storage/luns/{lun.uuid}/attributes/{name}`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Deletes a LUN attribute.
 

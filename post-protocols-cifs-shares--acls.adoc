@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-cifs-shares--acls.html'
+keywords: 'cifs acl,share acl,cifs permission,share access control,svm uuid,cifs share'
 summary: 'Create a share-level ACL on a CIFS share'
 ---
 
 = Create a share-level ACL on a CIFS share
+:imagesdir: ./media/
+
+[.lead]
+Creates a share-level ACL on a CIFS share to define specific access permissions for users or groups. Use this endpoint when you need to manage access controls for CIFS shares within an existing SVM.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/cifs/shares/{svm.uuid}/{share}/acls`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates a share-level ACL on a CIFS share.
+ONTAP 9.6
 
 == Required properties
 

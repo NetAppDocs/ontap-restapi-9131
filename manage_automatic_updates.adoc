@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_automatic_updates.html'
+keywords: 'automatic updates,status retrieval,package update,firmware update,update state'
 summary: 'Manage automatic updates'
 ---
 
 = Manage automatic updates
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve and update the status of automatic package updates using this API. You can check the progress of a specific update or perform actions such as scheduling or dismissing pending updates.
 
 == Overview
 

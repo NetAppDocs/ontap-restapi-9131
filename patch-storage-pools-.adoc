@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-storage-pools-.html'
+keywords: 'storage pool update,storage pool job,storage pool uuid,storage pool properties,storage pool patch,storage pool link'
 summary: 'Update a storage pool specified by the UUID'
 ---
 
 = Update a storage pool specified by the UUID
+:imagesdir: ./media/
+
+[.lead]
+Updates a storage pool with new properties, initiating a job that modifies the pool according to your specifications.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/storage/pools/{uuid}`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Updates the storage pool specified by the UUID with the properties in the body. This request starts a job and returns a link to that job.
 

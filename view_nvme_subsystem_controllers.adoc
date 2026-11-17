@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_nvme_subsystem_controllers.html'
+keywords: 'nvme controllers,nvme subsystem,connected hosts,dynamic connections,storage solution'
 summary: 'View NVMe subsystem controllers'
 ---
 
 = View NVMe subsystem controllers
+:imagesdir: ./media/
 
-
+[.lead]
+The NVMe subsystem controllers endpoints provide detailed information about the dynamic connections between hosts and the storage solution. Use these endpoints to access data regarding the configuration and status of NVMe subsystem controllers across your system.
 
 == Overview
 

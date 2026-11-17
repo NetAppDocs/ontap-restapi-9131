@@ -3,16 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-storage-snaplock-audit-logs.html'
+keywords: 'snaplock log,svm snaplock,log configuration,retention period,audit log volume'
 summary: 'Create a SnapLock log configuration for an SVM'
 ---
 
 = Create a SnapLock log configuration for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Creates a SnapLock log configuration for an SVM to define where and how long the log should be stored. You use this when you need to track and retain audit information for compliance purposes.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/storage/snaplock/audit-logs`#
 
-*Introduced In:* 9.7
+== Introduced in
 
-Creates a SnapLock log configuration for an SVM. A SnapLock log configuration consists of a volume to store the log, the maximum size of the log file, and the default period of time for which the log file should be retained. The input parameter retention_period expects the duration in ISO 8601 format.
+ONTAP 9.7
+
+== Usage notes
+
+A SnapLock log configuration consists of a volume to store the log, the maximum size of the log file, and the default period of time for which the log file should be retained. The input parameter retention_period expects the duration in ISO 8601 format.
 
 == Required properties
 
@@ -108,14 +119,14 @@ a|
 {
   "log_archive": {
     "base_name": "string",
-    "expiry_time": "2058-06-04 15:00:00 -0400",
+    "expiry_time": "2058-06-04 19:00:00 +0000",
     "path": "/snaplock_log/system_logs/20180822_005947_GMT-present",
     "size": 20000
   },
   "log_files": [
     {
       "base_name": "string",
-      "expiry_time": "2058-06-04 15:00:00 -0400",
+      "expiry_time": "2058-06-04 19:00:00 +0000",
       "path": "/snaplock_log/system_logs/20180822_005947_GMT-present",
       "size": 20000
     }

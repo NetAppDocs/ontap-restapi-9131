@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-name-services-host-record-.html'
+keywords: 'hostname lookup,ip address retrieval,svm uuid,host record,cache enablement'
 summary: 'Retrieve an IP address of a hostname'
 ---
 
 = Retrieve an IP address of a hostname
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the IP address for a given hostname, which is useful for resolving network configurations or troubleshooting connectivity issues.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/name-services/host-record/{svm.uuid}/{host}`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Retrieves the IP address of the specified hostname.
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_fc_network_interfaces.html'
+keywords: 'fibre channel,fcp,nvme fc,performance monitoring,interface placement,cluster node'
 summary: 'Manage FC network interfaces'
 ---
 
 = Manage FC network interfaces
+:imagesdir: ./media/
 
-
+[.lead]
+The FC interface REST API introduces endpoints for managing Fibre Channel network interfaces within an SVM. You can create, modify, or delete FC interfaces and check their status, enabling efficient configuration and operation of FC connections using FCP or NVMe/FC protocols. Performance monitoring and interface placement recommendations are also available to optimize your network setup.
 
 == Overview
 

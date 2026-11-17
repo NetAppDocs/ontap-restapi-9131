@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-security-login-totp-.html'
+keywords: 'totp profiles,user accounts,security login,totp configuration,sha fingerprint'
 summary: 'Retrieve TOTP profiles'
 ---
 
 = Retrieve TOTP profiles
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the TOTP profiles configured for user accounts to view their configurations.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/security/login/totps`#
 
-*Introduced In:* 9.13
+== Introduced in
 
-Retrieves the TOTP profiles configured for user accounts.
+ONTAP 9.13
 
 == Related ONTAP commands
 

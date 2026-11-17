@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cifs_user_group_privileges.html'
+keywords: 'cifs user privileges,active directory privileges,local user permissions,user group permissions,svm privileges'
 summary: 'Manage CIFS user group privileges'
 ---
 
 = Manage CIFS user group privileges
+:imagesdir: ./media/
 
-
+[.lead]
+Manage privileges for local or Active Directory users and groups to define access permissions within your CIFS environment. Use these endpoints to display, control, add, or update privileges associated with users or groups, facilitating effective permission management across your storage virtual machines (SVMs).
 
 == Overview
 

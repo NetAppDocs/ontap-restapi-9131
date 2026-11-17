@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-security.html'
+keywords: 'security configuration,cluster security,security details,cluster information,security cluster'
 summary: 'Retrieve information about security configured on the cluster'
 ---
 
 = Retrieve information about security configured on the cluster
+:imagesdir: ./media/
+
+[.lead]
+Accesses information about the security configurations on the cluster, helping you understand the current security settings in place.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/security`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Retrieves information about the security configured on the cluster.
 

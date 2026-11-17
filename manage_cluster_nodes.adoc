@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cluster_nodes.html'
+keywords: 'cluster nodes, node management, node configuration, node state, ha takeover'
 summary: 'Manage cluster nodes'
 ---
 
 = Manage cluster nodes
+:imagesdir: ./media/
 
-
+[.lead]
+Use the Manage Cluster Nodes API to add nodes, update configurations, and retrieve node details within your ONTAP cluster. These endpoints help maintain optimal node performance and ensure consistent cluster operation.
 
 = Overview
 

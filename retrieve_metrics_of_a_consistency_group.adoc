@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_metrics_of_a_consistency_group.html'
+keywords: 'performance metrics,capacity metrics,consistency group,space metrics,historical metrics'
 summary: 'Retrieve metrics of a consistency group'
 ---
 
 = Retrieve metrics of a consistency group
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve historical performance and capacity metrics for consistency groups to analyze their past behavior and resource usage. Use these endpoints to support performance assessments and capacity planning by accessing detailed metrics over specific time intervals.
 
 == Overview
 

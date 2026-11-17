@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-storage-snaplock-event-retention-operations-.html'
+keywords: 'snaplock event-retention,ebr operation,abort operation,storage snaplock,event retention'
 summary: 'Cancel an ongoing EBR operation'
 ---
 
 = Cancel an ongoing EBR operation
+:imagesdir: ./media/
+
+[.lead]
+Aborts an ongoing EBR operation when you need to halt its progress, typically to prevent unintended changes or outcomes in your storage environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/storage/snaplock/event-retention/operations/{id}`#
 
-*Introduced In:* 9.7
+== Introduced in
 
-Aborts an ongoing EBR operation.
+ONTAP 9.7
 
 == Related ONTAP commands
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-network-ethernet-broadcast-domains.html'
+keywords: 'broadcast domain,create broadcast domain,ethernet broadcast,maximum transmission unit,ipspace'
 summary: 'Create a new broadcast domain'
 ---
 
 = Create a new broadcast domain
+:imagesdir: ./media/
+
+[.lead]
+Creates a new broadcast domain to manage network segmentation within your storage environment. This helps organize and control network traffic efficiently.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/network/ethernet/broadcast-domains`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates a new broadcast domain.
+ONTAP 9.6
 
 == Required properties
 

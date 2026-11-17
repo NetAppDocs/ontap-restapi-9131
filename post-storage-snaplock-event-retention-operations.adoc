@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-storage-snaplock-event-retention-operations.html'
+keywords: 'snaplock event-retention,ebr policy,create ebr,apply snaplock,event retention,ontap snaplock'
 summary: 'Create an EBR policy'
 ---
 
 = Create an EBR policy
+:imagesdir: ./media/
+
+[.lead]
+Creates an EBR policy to define the event-based retention settings for SnapLock operations, ensuring compliance with data retention requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/storage/snaplock/event-retention/operations`#
 
-*Introduced In:* 9.7
+== Introduced in
 
-Creates an EBR policy.
+ONTAP 9.7
 
 == Required properties
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_san_portsets.html'
+keywords: 'manage san portsets,fibre channel,iscsi network,initiator group,selective lun mapping'
 summary: 'Manage SAN portsets'
 ---
 
 = Manage SAN portsets
+:imagesdir: ./media/
 
-
+[.lead]
+Use the portset REST API to manage collections of Fibre Channel Protocol and iSCSI network interfaces within an SVM, controlling how initiators connect to mapped LUNs. This API is primarily intended for legacy use, as modern ONTAP configurations favor alternative methods for network interface management and load balancing.
 
 == Overview
 
@@ -24,7 +27,7 @@ A portset can be bound to one or more initiator groups. An initiator group (igro
 
 When a portset is created, the `protocol` property is used to restrict member network interfaces to Fibre Channel Protocol (_fcp_), iSCSI (_iscsi_), or both (_mixed_).
 
-Zero or more network interfaces can be supplied when the portset is created. After creation, network interfaces can be added to or removed from the portset using the `/protocols/san/portsets/{portset.uuid}/interfaces` endpoint. See link:post-protocols-san-portsets-interfaces(#-san-portset-interface-create)anddelete-protocols-san-portsets-interfaces-.html<</SAN/portset_interface_create,POST /protocols/san/portsets/{portset.uuid}/interfaces>> and [DELETE /protocols/san/portsets/{portset.uuid}/interfaces/\{name}]  for more details.
+Zero or more network interfaces can be supplied when the portset is created. After creation, network interfaces can be added to or removed from the portset using the `/protocols/san/portsets/{portset.uuid}/interfaces` endpoint. See link:post-protocols-san-portsets-interfaces.html[POST /protocols/san/portsets/{portset.uuid}/interfaces]  and link:delete-protocols-san-portsets-interfaces-.html[DELETE /protocols/san/portsets/{portset.uuid}/interfaces/\{name}]  for more details.
 
 == Examples
 

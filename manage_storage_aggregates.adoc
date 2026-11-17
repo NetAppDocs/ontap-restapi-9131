@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_storage_aggregates.html'
+keywords: 'storage aggregates,modify aggregate,aggregate expansion,aggregate deletion,add storage pool,ssd cache expansion'
 summary: 'Manage storage aggregates'
 ---
 
 = Manage storage aggregates
+:imagesdir: ./media/
 
-
+[.lead]
+Modify properties of storage aggregates through PATCH operations to optimize your ONTAP cluster's performance and capacity. Use these endpoints to rename, relocate, or adjust settings such as RAID configuration and encryption. Simulated and automatic expansions are supported, providing flexibility in managing aggregate resources.
 
 == Updating storage aggregates
 

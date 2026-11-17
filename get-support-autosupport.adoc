@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-support-autosupport.html'
+keywords: 'autosupport configuration,cluster connectivity,connectivity issues,node connectivity,corrective action,autosupport server'
 summary: 'Retrieve the AutoSupport configuration'
 ---
 
 = Retrieve the AutoSupport configuration
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the AutoSupport configuration of the cluster to assess and manage its connectivity settings. This action helps identify and resolve any connectivity issues affecting AutoSupport communication.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/support/autosupport`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves the AutoSupport configuration of the cluster and if requested, returns connectivity issues with the AutoSupport configuration.
 

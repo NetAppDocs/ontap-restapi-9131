@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_security_key_managers.html'
+keywords: 'security key manager,key manager keys,key-id retrieval,key manager node,encryption algorithm'
 summary: 'View security key managers'
 ---
 
 = View security key managers
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve security key manager keys on a specific node to access key information and manage encryption settings.
 
 :doctype: book
 

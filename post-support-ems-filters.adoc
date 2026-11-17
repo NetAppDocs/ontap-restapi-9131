@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-support-ems-filters.html'
+keywords: 'event filter,filter creation,filter rules,event matching,event filter create'
 summary: 'Create an event filter'
 ---
 
 = Create an event filter
+:imagesdir: ./media/
+
+[.lead]
+Creates an event filter to specify criteria for matching events in your ONTAP environment. Use this to manage and organize how events are tracked and handled based on your requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/support/ems/filters`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates an event filter.
+ONTAP 9.6
 
 == Required properties
 

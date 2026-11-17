@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-protocols-nfs-export-policies-.html'
+keywords: 'export policy,export policy rules,nfs update,nfs export,export policy rename'
 summary: 'Update export policy properties'
 ---
 
 = Update export policy properties
+:imagesdir: ./media/
+
+[.lead]
+Updates the properties of an export policy to change its name or replace all associated export policy rules. This is useful when you need to modify the access permissions for NFS clients without altering the existing configurations manually.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/protocols/nfs/export-policies/{id}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Updates the properties of an export policy to change an export policy name or replace all export policy rules.
 

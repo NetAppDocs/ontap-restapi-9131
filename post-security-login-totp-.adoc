@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-login-totp-.html'
+keywords: 'totp profile,account owner,user account,security login,user authentication'
 summary: 'Create a TOTP profile'
 ---
 
 = Create a TOTP profile
+:imagesdir: ./media/
+
+[.lead]
+Creates a TOTP profile for a user account to enable two-factor authentication, enhancing account security through time-based one-time passwords.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/login/totps`#
 
-*Introduced In:* 9.13
+== Introduced in
 
-Creates a TOTP profile for a user account.
+ONTAP 9.13
 
 == Required properties
 

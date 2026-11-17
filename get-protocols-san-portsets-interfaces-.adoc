@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-san-portsets-interfaces-.html'
+keywords: 'network interface,portset,portset interface,san protocols,network retrieval'
 summary: 'Retrieve specific portset network interfaces'
 ---
 
 = Retrieve specific portset network interfaces
+:imagesdir: ./media/
+
+[.lead]
+Accesses a specific network interface within a portset to view its configuration and status. This can be useful when verifying or troubleshooting portset connections.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/san/portsets/{portset.uuid}/interfaces/{uuid}`#
 
-*Introduced In:* 9.9
+== Introduced in
+
+ONTAP 9.9
+
+== Usage notes
 
 Retrieves a network interface of a portset.
 

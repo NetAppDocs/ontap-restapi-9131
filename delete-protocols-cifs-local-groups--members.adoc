@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-cifs-local-groups--members.html'
+keywords: 'delete local users,remove active directory users,remove active directory groups,delete local group members,remove users from svm,delete cifs members'
 summary: 'Delete local users or Active Directory users and groups from a local group and SVM'
 ---
 
 = Delete local users or Active Directory users and groups from a local group and SVM
+:imagesdir: ./media/
+
+[.lead]
+Removes local users or Active Directory users and groups from a specified local group and SVM. Use this when you need to manage group memberships efficiently within your ONTAP environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/cifs/local-groups/{svm.uuid}/{local_cifs_group.sid}/members`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Deletes the local users, Active Directory users and/or Active Directory groups from the specified local group and SVM.
 

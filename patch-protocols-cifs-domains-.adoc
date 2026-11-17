@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-protocols-cifs-domains-.html'
+keywords: 'cifs domain,domain modification,svm domain,cifs server,svm uuid'
 summary: 'Update the CIFS domain-related information for an SVM'
 ---
 
 = Update the CIFS domain-related information for an SVM
+:imagesdir: ./media/
+
+[.lead]
+Modifies the CIFS domain-related information for a specific SVM, helping to ensure accurate configuration and integration within your network environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/protocols/cifs/domains/{svm.uuid}`#
 
-*Introduced In:* 9.13
+== Introduced in
+
+ONTAP 9.13
+
+== Usage notes
 
 Modifies the CIFS domain-related information of the specified SVM.
 
@@ -21,7 +32,7 @@ Modifies the CIFS domain-related information of the specified SVM.
 
 == Learn more
 
-* link:view_and_update_cifs_domain-related_information_(specific_svm).html[DOC /protocols/cifs/domains/{svm.uuid}]
+* link:view_and_update_cifs_domain-related_information_specific_svm_.html[DOC /protocols/cifs/domains/{svm.uuid}]
 
 
 == Parameters
@@ -121,6 +132,9 @@ a|Specifies the trusted domain records.
     "schedule_time_of_day": 36900,
     "schedule_warn_message": "string"
   },
+  "preferred_dcs": [
+    {}
+  ],
   "server_discovery_mode": "string",
   "svm": {
     "name": "svm1",

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_application_consistency_group_snapshot_copies.html'
+keywords: 'snapshot copy,consistency group,application consistent,crash consistent,restore operation,snapcenter suite'
 summary: 'Manage application consistency group Snapshot copies'
 ---
 
 = Manage application consistency group Snapshot copies
+:imagesdir: ./media/
 
-
+[.lead]
+Consistency group Snapshot APIs manage the creation, inventory, and restoration of Snapshot copies within application consistency groups. Use these endpoints to schedule or manually create Snapshot copies, which vary in type from crash consistent to application consistent. Integrate with host applications through SnapCenter for optimal coordination and value.
 
 == Overview
 

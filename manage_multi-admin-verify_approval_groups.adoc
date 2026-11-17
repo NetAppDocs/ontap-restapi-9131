@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_multi-admin-verify_approval_groups.html'
+keywords: 'multi-admin verify,approval group,user group,cluster server,rule association'
 summary: 'Manage multi-admin-verify approval groups'
 ---
 
 = Manage multi-admin-verify approval groups
+:imagesdir: ./media/
 
-
+[.lead]
+Explore endpoints for managing multi-admin verification approval groups. Define user groups within a cluster server context and associate them with rules or global settings to retrieve necessary approvals for requests.
 
 == Overview
 

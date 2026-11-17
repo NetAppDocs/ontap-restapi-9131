@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-name-services-dns-.html'
+keywords: 'dns configuration,single svm,domain server,domain retrieval,server status'
 summary: 'Retrieve DNS domain and server configurations'
 ---
 
 = Retrieve DNS domain and server configurations
+:imagesdir: ./media/
+
+[.lead]
+Retrieves DNS domain and server configurations for a Storage Virtual Machine (SVM) to understand the current network setup. This information can help you manage and troubleshoot domain name services efficiently.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/name-services/dns/{uuid}`#
 
-*Introduced In:* 9.13
+== Introduced in
+
+ONTAP 9.13
+
+== Usage notes
 
 Retrieves DNS domain and server configuration of an SVM. By default, both DNS domains and servers are displayed.
 

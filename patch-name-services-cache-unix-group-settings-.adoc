@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-name-services-cache-unix-group-settings-.html'
+keywords: 'unix group,cache settings,svm settings,unix group settings,group cache settings'
 summary: 'Update UNIX group cache settings'
 ---
 
 = Update UNIX group cache settings
+:imagesdir: ./media/
+
+[.lead]
+Updates the UNIX group cache settings to modify how the cache behaves within your ONTAP environment. This is useful for tailoring cache performance to meet specific operational requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/name-services/cache/unix-group/settings/{svm.uuid}`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Updates unix-group cache settings.
 

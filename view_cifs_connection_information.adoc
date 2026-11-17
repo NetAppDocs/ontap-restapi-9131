@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_cifs_connection_information.html'
+keywords: 'cifs connections,cifs session,connection information,server ip,client ip,network context'
 summary: 'View CIFS connection information'
 ---
 
 = View CIFS connection information
+:imagesdir: ./media/
 
-
+[.lead]
+Access CIFS connection information endpoints to view details about currently established CIFS connections within your environment. Use these endpoints to retrieve lists of active connections, helping you monitor and manage network activities effectively.
 
 == Overview
 

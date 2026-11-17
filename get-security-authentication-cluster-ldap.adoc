@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-security-authentication-cluster-ldap.html'
+keywords: 'cluster ldap,ldap configuration,cluster security,ldap settings,ldap retrieval'
 summary: 'Retrieve the LDAP configuration for the cluster'
 ---
 
 = Retrieve the LDAP configuration for the cluster
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the cluster's LDAP configuration to examine or verify its settings. This is useful when you need to ensure the LDAP configuration aligns with your authentication requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/security/authentication/cluster/ldap`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves the cluster LDAP configuration.
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-snapmirror-policies-.html'
+keywords: 'snapmirror policy update,snapmirror retention rules,identity preservation update,transfer schedule modify,throttle policy change,retention label modify'
 summary: 'Update the SnapMirror policy'
 ---
 
 = Update the SnapMirror policy
+:imagesdir: ./media/
+
+[.lead]
+Updates a SnapMirror policy to modify its configuration settings, helping you manage data replication and retention rules effectively. This operation allows you to tailor the policy to meet specific data management requirements.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/snapmirror/policies/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Updates the SnapMirror policy.
+ONTAP 9.6
 
 == Important notes
 

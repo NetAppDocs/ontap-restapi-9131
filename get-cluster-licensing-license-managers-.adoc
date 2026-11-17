@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-cluster-licensing-license-managers-.html'
+keywords: 'license manager,license information,cluster licensing,uuid retrieval,system license'
 summary: 'Retrieve license manager information'
 ---
 
 = Retrieve license manager information
+:imagesdir: ./media/
+
+[.lead]
+Accesses the license manager information to review current license configurations and status within your cluster.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cluster/licensing/license-managers/{uuid}`#
 
-*Introduced In:* 9.8
+== Introduced in
+
+ONTAP 9.8
+
+== Usage notes
 
 Retrieves information about the license manager.
 

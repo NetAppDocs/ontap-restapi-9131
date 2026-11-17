@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-storage-snapshot-policies-schedules-.html'
+keywords: 'snapshot policy,remove schedule,delete schedule,snapshot schedule,storage snapshot'
 summary: 'Delete a schedule from a Snapshot copy policy'
 ---
 
 = Delete a schedule from a Snapshot copy policy
+:imagesdir: ./media/
+
+[.lead]
+Removes a schedule from a Snapshot copy policy, which can be useful when adjusting or updating your Snapshot management strategy.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/storage/snapshot-policies/{snapshot_policy.uuid}/schedules/{schedule.uuid}`#
 
-*Introduced In:* 9.8
+== Introduced in
+
+ONTAP 9.8
+
+== Usage notes
 
 Deletes a schedule from a Snapshot copy policy
 

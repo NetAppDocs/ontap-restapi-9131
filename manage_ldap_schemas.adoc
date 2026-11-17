@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_ldap_schemas.html'
+keywords: 'ldap schemas,active directory,unix servers,identity management,network information,windows services'
 summary: 'Manage LDAP schemas'
 ---
 
 = Manage LDAP schemas
+:imagesdir: ./media/
 
-
+[.lead]
+Access and manage LDAP schemas within your ONTAP environment, choosing from default options tailored to various Windows and UNIX server deployments. Use these endpoints to retrieve, create, update, and delete LDAP schema information as needed for your configuration.
 
 == Overview
 

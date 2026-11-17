@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-application-consistency-groups-snapshots.html'
+keywords: 'consistency group,snapshot copies,snapshot retrieval,consistency group uuid,missing volumes'
 summary: 'Retrieve consistency group Snapshot copies'
 ---
 
 = Retrieve consistency group Snapshot copies
+:imagesdir: ./media/
+
+[.lead]
+Retrieves Snapshot copies for a consistency group, accessing the stored copies for data protection and recovery purposes.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/application/consistency-groups/{consistency_group.uuid}/snapshots`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Retrieves Snapshot copies for a consistency group.
+ONTAP 9.10
 
 == Expensive properties
 
@@ -264,7 +271,7 @@ a|
         "uuid": "02c9e252-41be-11e9-81d5-00a0986138f7"
       },
       "consistency_type": "crash",
-      "create_time": "2020-10-25 07:20:00 -0400",
+      "create_time": "2020-10-25 11:20:00 +0000",
       "is_partial": "",
       "missing_volumes": [
         {

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-fpolicy.html'
+keywords: 'fpolicy configuration,svm configuration,file operations monitoring,external server notifications,policy scope,policy container'
 summary: 'Create an FPolicy configuration'
 ---
 
 = Create an FPolicy configuration
+:imagesdir: ./media/
+
+[.lead]
+Creates an FPolicy configuration to define how file operations are monitored and managed within an existing SVM. Use this to enforce policies on file access and modify behaviors based on specific conditions.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/fpolicy`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates an FPolicy configuration.
+ONTAP 9.6
 
 == Required properties
 

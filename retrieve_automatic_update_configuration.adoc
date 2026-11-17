@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_automatic_update_configuration.html'
+keywords: 'automatic updates,update configuration,firmware configuration,sp bmc,ontap automatic'
 summary: 'Retrieve automatic update configuration'
 ---
 
 = Retrieve automatic update configuration
+:imagesdir: ./media/
 
-
+[.lead]
+Query and retrieve configurations for automatic updates using this API to ensure your system is set to the latest standards.
 
 == Overview
 

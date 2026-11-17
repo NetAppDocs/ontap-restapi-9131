@@ -3,16 +3,27 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-support-snmp-users.html'
+keywords: 'snmp user,cluster scoped,svm scoped,snmpv3 user,community user,remote switch'
 summary: 'Create a cluster-scoped or an SVM-scoped SNMP user'
 ---
 
 = Create a cluster-scoped or an SVM-scoped SNMP user
+:imagesdir: ./media/
+
+[.lead]
+Creates either a cluster-scoped or an SVM-scoped SNMP user, supporting SNMPv1, SNMPv2c, or SNMPv3 configurations. This enables SNMP management for monitoring and managing network resources effectively.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/support/snmp/users`#
 
-*Introduced In:* 9.7
+== Introduced in
 
-Creates either a cluster-scoped or an SVM-scoped SNMP user. This user can be an SNMPv1 or SNMPv2c community user or an SNMPv3 user. An SNMPv3 user can be a local SNMPv3 user or a remote SNMPv3 user.
+ONTAP 9.7
+
+== Usage notes
+
+This user can be an SNMPv1 or SNMPv2c community user or an SNMPv3 user. An SNMPv3 user can be a local SNMPv3 user or a remote SNMPv3 user.
 
 == Required properties
 

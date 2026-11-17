@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_cluster_software.html'
+keywords: 'cluster software,software profile,software packages,firmware upgrade,software history'
 summary: 'Manage cluster software'
 ---
 
 = Manage cluster software
+:imagesdir: ./media/
 
-
+[.lead]
+Use the cluster software API to download, validate, upgrade, and remove software packages across nodes. Gain insights into software profiles, package collections, and firmware statuses for efficient cluster management.
 
 :doctype: book
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_bridges.html'
+keywords: 'storage bridge,retrieve bridges,cluster bridges,bridge information,storage management'
 summary: 'Manage bridges'
 ---
 
 = Manage bridges
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve storage bridge information to access a comprehensive list of bridges within the cluster. Use these endpoints to gain insights into bridge configurations and status, facilitating effective management of cluster connections.
 
 == Retrieving storage bridge information
 

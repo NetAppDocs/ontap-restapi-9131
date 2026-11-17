@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_cifs_domain-related_information.html'
+keywords: 'cifs domain,svm domain,domain trust,domain servers,preferred dcs,password schedule'
 summary: 'View CIFS domain-related information'
 ---
 
 = View CIFS domain-related information
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve CIFS domain-related information for all Storage Virtual Machines (SVMs) to understand domain configurations and trust relationships. Use these endpoints to display details such as trusted domains, discovered servers, and password schedules across your network environment.
 
 == Overview
 

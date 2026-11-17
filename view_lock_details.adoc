@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_lock_details.html'
+keywords: 'lock details,concurrent access,synchronization mechanism,query fields,smb lock'
 summary: 'View lock details'
 ---
 
 = View lock details
+:imagesdir: ./media/
 
-
+[.lead]
+Explore lock management endpoints to monitor and control access to files across multiple clients. Use these endpoints to view, query, or break locks based on detailed lock information. Providing more query fields enhances processing efficiency.
 
 == Overview
 

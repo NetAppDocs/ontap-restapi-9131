@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_role_privilege_path.html'
+keywords: 'role management,privilege path,access level,snapshot privileges,file system analytics'
 summary: 'Manage role privilege path'
 ---
 
 = Manage role privilege path
+:imagesdir: ./media/
 
-
+[.lead]
+Use these endpoints to manage role privilege paths by retrieving, modifying, or deleting access levels and queries associated with REST API paths or command directory paths. This functionality applies to both SVM-scoped and cluster-scoped roles, enhancing your ability to tailor access within your ONTAP environment. Note that predefined role paths have fixed access levels that cannot be altered.
 
 == Overview
 

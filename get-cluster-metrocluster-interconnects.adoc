@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-cluster-metrocluster-interconnects.html'
+keywords: 'metrocluster interconnects,nodes metrocluster,interconnect adapter,mirror state,interfaces address,state filter'
 summary: 'Retrieve interconnect adapter information for nodes in MetroCluster'
 ---
 
 = Retrieve interconnect adapter information for nodes in MetroCluster
+:imagesdir: ./media/
+
+[.lead]
+Retrieves interconnect adapter information for nodes in a MetroCluster to examine the connectivity and configuration details within the cluster environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/cluster/metrocluster/interconnects`#
 
-*Introduced In:* 9.8
+== Introduced in
+
+ONTAP 9.8
+
+== Usage notes
 
 Retrieves a list of interconnect adapter information for nodes in the MetroCluster.
 

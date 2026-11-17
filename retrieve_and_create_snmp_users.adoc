@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_and_create_snmp_users.html'
+keywords: 'snmp users,snmpv1 community,snmpv2c community,local snmpv3,remote snmpv3,usm user'
 summary: 'Retrieve and create SNMP users'
 ---
 
 = Retrieve and create SNMP users
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve and define SNMP users within your ONTAP environment using these endpoints. Whether you're managing SNMPv1/SNMPv2c community users or SNMPv3 users, you can query the ONTAP SNMP server and configure users for sending traps or querying remote switches.
 
 == Overview
 

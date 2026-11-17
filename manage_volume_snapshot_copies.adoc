@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_volume_snapshot_copies.html'
+keywords: 'snapshot copies,manage snapshots,volume snapshots,ontap snapshots,snapmirror snapshots'
 summary: 'Manage volume Snapshot copies'
 ---
 
 = Manage volume Snapshot copies
+:imagesdir: ./media/
 
-
+[.lead]
+Use Snapshot copy APIs to create, modify, delete, and retrieve Snapshot copies on individual or multiple volumes. Snapshot copies capture the state of the filesystem at a specific point in time, offering flexibility for data protection and recovery tasks.
 
 == Overview
 

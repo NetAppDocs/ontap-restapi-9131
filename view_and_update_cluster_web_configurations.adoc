@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_and_update_cluster_web_configurations.html'
+keywords: 'cluster web,web services,configuration update,https port,csrf protection'
 summary: 'View and update cluster web configurations'
 ---
 
 = View and update cluster web configurations
+:imagesdir: ./media/
 
-
+[.lead]
+Modify and retrieve cluster-wide web services configurations using this API. These endpoints enable you to update settings such as ports, certificates, and security features, optimizing the management of web services within your environment.
 
 = Overview
 

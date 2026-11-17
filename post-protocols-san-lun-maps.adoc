@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-san-lun-maps.html'
+keywords: 'lun map,san protocols,create lun map,initiator group,logical unit number,ontap lun mapping'
 summary: 'Create a LUN map'
 ---
 
 = Create a LUN map
+:imagesdir: ./media/
+
+[.lead]
+Creates a LUN map to associate a logical unit number with an existing initiator group and storage virtual machine, enabling access to the specified LUN.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/san/lun-maps`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Creates a LUN map.
+ONTAP 9.6
 
 == Required properties
 

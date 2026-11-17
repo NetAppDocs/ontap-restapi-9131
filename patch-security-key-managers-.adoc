@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-security-key-managers-.html'
+keywords: 'key manager,passphrase update,key manager sync,onboard key manager,external modify,cluster synchronization'
 summary: 'Update key managers'
 ---
 
 = Update key managers
+:imagesdir: ./media/
+
+[.lead]
+Updates a key manager to modify its configuration or synchronize key details across the cluster. Use this endpoint when you need to ensure key management settings are consistent or require a passphrase update for the Onboard Key Manager.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/security/key-managers/{uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Updates a key manager.
+ONTAP 9.6
 
 == Required properties
 

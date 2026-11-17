@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-cifs-services.html'
+keywords: 'cifs services,retrieve cifs,server show,server options,server security'
 summary: 'Retrieve CIFS servers'
 ---
 
 = Retrieve CIFS servers
+:imagesdir: ./media/
+
+[.lead]
+Retrieves information about CIFS servers, which is useful for managing and monitoring CIFS services in your environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/cifs/services`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves CIFS servers.
 
@@ -767,7 +778,7 @@ a|
           "total": 1000,
           "write": 100
         },
-        "timestamp": "2017-01-25 06:20:13 -0500"
+        "timestamp": "2017-01-25 11:20:13 +0000"
       },
       "name": "CIFS1",
       "netbios": {
@@ -813,7 +824,7 @@ a|
           "total": 1000,
           "write": 100
         },
-        "timestamp": "2017-01-25 06:20:13 -0500"
+        "timestamp": "2017-01-25 11:20:13 +0000"
       },
       "svm": {
         "_links": {

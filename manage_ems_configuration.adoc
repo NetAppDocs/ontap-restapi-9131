@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_ems_configuration.html'
+keywords: 'event management,ems configuration,notification settings,error severity,email destination,filter rules'
 summary: 'Manage EMS configuration'
 ---
 
 = Manage EMS configuration
+:imagesdir: ./media/
 
-
+[.lead]
+The Event Management System (EMS) endpoints enable you to collect, process, and report on events within ONTAP. Use these endpoints to query observed events, set up handling preferences, and configure notifications.
 
 == Overview
 

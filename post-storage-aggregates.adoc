@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-storage-aggregates.html'
+keywords: 'aggregate creation,optimal layout,aggregate specification,cluster nodes,disk count'
 summary: 'Create a collection of aggregates for an entire cluster'
 ---
 
 = Create a collection of aggregates for an entire cluster
+:imagesdir: ./media/
+
+[.lead]
+Automatically creates aggregates for an entire cluster based on the system's recommended optimal layout. This operation initiates a job that you can track through a provided link. You can specify properties if a custom aggregate specification is necessary.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/storage/aggregates`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Automatically creates aggregates based on an optimal layout recommended by the system. Alternatively, properties can be provided to create an aggregate according to the requested specification. This request starts a job and returns a link to that job.
 POST operations will be blocked while one or more nodes in the cluster are simulating or implementing automatic aggregate creation.
@@ -257,7 +268,7 @@ a|Number of volumes in the aggregate.
       }
     ]
   },
-  "create_time": "2018-01-01 11:00:00 -0500",
+  "create_time": "2018-01-01 16:00:00 +0000",
   "dr_home_node": {
     "name": "node1",
     "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
@@ -268,7 +279,7 @@ a|Number of volumes in the aggregate.
   },
   "inactive_data_reporting": {
     "enabled": true,
-    "start_time": "2019-12-12 11:00:00 -0500"
+    "start_time": "2019-12-12 16:00:00 +0000"
   },
   "is_spare_low": "",
   "name": "node1_aggr_1",
@@ -473,7 +484,7 @@ a|List of validation warnings and remediation advice for the aggregate simulate 
           }
         ]
       },
-      "create_time": "2018-01-01 11:00:00 -0500",
+      "create_time": "2018-01-01 16:00:00 +0000",
       "dr_home_node": {
         "name": "node1",
         "uuid": "1cd8a442-86d1-11e0-ae1c-123478563412"
@@ -484,7 +495,7 @@ a|List of validation warnings and remediation advice for the aggregate simulate 
       },
       "inactive_data_reporting": {
         "enabled": true,
-        "start_time": "2019-12-12 11:00:00 -0500"
+        "start_time": "2019-12-12 16:00:00 +0000"
       },
       "is_spare_low": "",
       "name": "node1_aggr_1",

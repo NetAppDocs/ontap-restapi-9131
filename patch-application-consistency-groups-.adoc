@@ -3,16 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-application-consistency-groups-.html'
+keywords: 'consistency group,storage elements,update consistency,modify storage,consistency uuid'
 summary: 'Update a consistency group'
 ---
 
 = Update a consistency group
+:imagesdir: ./media/
+
+[.lead]
+Updates a consistency group to modify its configuration by adding new storage elements without affecting existing ones.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/application/consistency-groups/{uuid}`#
 
-*Introduced In:* 9.10
+== Introduced in
 
-Updates a consistency group.
+ONTAP 9.10
+
+== Usage notes
 
 NOTE: that this operation will never delete storage elements. You can specify only elements that should be added to the consistency group regardless of existing storage objects.
 
@@ -175,7 +184,7 @@ The total number of volumes across all child consistency groups contained in a c
             }
           },
           "comment": "string",
-          "create_time": "2018-06-04 15:00:00 -0400",
+          "create_time": "2018-06-04 19:00:00 +0000",
           "lun_maps": [
             {
               "igroup": {
@@ -222,7 +231,7 @@ The total number of volumes across all child consistency groups contained in a c
       "namespaces": [
         {
           "comment": "string",
-          "create_time": "2018-06-04 15:00:00 -0400",
+          "create_time": "2018-06-04 19:00:00 +0000",
           "provisioning_options": {
             "action": "string"
           },
@@ -382,7 +391,7 @@ The total number of volumes across all child consistency groups contained in a c
         }
       },
       "comment": "string",
-      "create_time": "2018-06-04 15:00:00 -0400",
+      "create_time": "2018-06-04 19:00:00 +0000",
       "lun_maps": [
         {
           "igroup": {
@@ -429,7 +438,7 @@ The total number of volumes across all child consistency groups contained in a c
   "namespaces": [
     {
       "comment": "string",
-      "create_time": "2018-06-04 15:00:00 -0400",
+      "create_time": "2018-06-04 19:00:00 +0000",
       "provisioning_options": {
         "action": "string"
       },

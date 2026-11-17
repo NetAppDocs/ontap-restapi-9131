@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_host_records.html'
+keywords: 'hostname lookup,ip address resolution,host table entries,host records,name services'
 summary: 'View host records'
 ---
 
 = View host records
+:imagesdir: ./media/
 
-
+[.lead]
+Use host-record endpoints to display IP addresses associated with specified hostnames and vice versa. These endpoints help you retrieve host table entries efficiently.
 
 == Overview
 

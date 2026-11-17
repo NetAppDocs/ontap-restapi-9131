@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-file-clone-split-status-.html'
+keywords: 'file clone,split status,volume clone,clone split,node volumes,file split'
 summary: 'Retrieve file clone split status of all volumes'
 ---
 
 = Retrieve file clone split status of all volumes
+:imagesdir: ./media/
+
+[.lead]
+Retrieves the file clone split status for all volumes, helping you monitor the progress of file split processes.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/file/clone/split-status/{volume.uuid}`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Retrieves file clone split status of all volumes in the node.
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-san-vvol-bindings-.html'
+keywords: 'vvol binding,delete binding,san protocols,protocol endpoint,lun binding'
 summary: 'Delete a vVol binding'
 ---
 
 = Delete a vVol binding
+:imagesdir: ./media/
+
+[.lead]
+Deletes a virtual volume (vVol) binding to manage the connections between logical unit numbers (LUNs). Use this endpoint when you need to remove or adjust the reference count for the binding between specific LUNs.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/san/vvol-bindings/{protocol_endpoint.uuid}/{vvol.uuid}`#
 
-*Introduced In:* 9.10
+== Introduced in
+
+ONTAP 9.10
+
+== Usage notes
 
 Deletes a vVol binding. The binding between any two specific LUNs is reference counted. When a binding is deleted, the binding count is decremented, but the LUNs remain bound if the resultant reference count is greater than zero. When the binding count reaches zero, the binding is destroyed.
 

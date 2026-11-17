@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-security-authentication-cluster-saml-sp.html'
+keywords: 'saml service provider,service provider configuration,identity provider setup,verify metadata server,service provider creation'
 summary: 'Create a SAML service provider configuration'
 ---
 
 = Create a SAML service provider configuration
+:imagesdir: ./media/
+
+[.lead]
+Configures a SAML service provider to establish identity federation with your chosen identity provider. Use this endpoint to set up initial parameters for secure authentication workflows.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/security/authentication/cluster/saml-sp`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Creates a SAML service provider configuration. Note that "common_name" is mutually exclusive with "serial_number" and "ca" in POST. SAML will initially be disabled, requiring a patch to set "enabled" to "true", so that the user has time to complete the setup of the IdP.
 

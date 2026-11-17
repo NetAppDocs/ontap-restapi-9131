@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-storage-snapshot-policies.html'
+keywords: 'snapshot policies,snapshot copy,snapmirror label,schedule name,retention period'
 summary: 'Retrieve Snapshot copy policies'
 ---
 
 = Retrieve Snapshot copy policies
+:imagesdir: ./media/
+
+[.lead]
+Retrieves a collection of Snapshot copy policies to access and review the policies configured for managing Snapshot copies within your environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/storage/snapshot-policies`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Retrieves a collection of Snapshot copy policies.
+ONTAP 9.6
 
 == Related ONTAP commands
 

@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'retrieve_or_create_a_collection_of_storage_aggregates.html'
+keywords: 'storage aggregates,retrieve aggregates,create aggregates,spare disks,raid configuration,aggregate performance'
 summary: 'Retrieve or create a collection of storage aggregates'
 ---
 
 = Retrieve or create a collection of storage aggregates
+:imagesdir: ./media/
 
-
+[.lead]
+Retrieve and create collections of storage aggregates to manage and optimize disk configurations in your ONTAP cluster. Use these endpoints to query aggregate properties and recommend configurations, while excluding system-owned root aggregates. The API supports both automated and manual aggregate creation, offering flexibility in layout and configuration settings.
 
 == Retrieving storage aggregate information
 

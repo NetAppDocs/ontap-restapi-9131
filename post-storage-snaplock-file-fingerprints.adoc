@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-storage-snaplock-file-fingerprints.html'
+keywords: 'snaplock file,fingerprint session,fingerprint computation,file fingerprint,session id,md5 algorithm'
 summary: 'Create a fingerprint computation session'
 ---
 
 = Create a fingerprint computation session
+:imagesdir: ./media/
+
+[.lead]
+Creates a fingerprint computation session for a file, which returns a unique session ID. Use this session ID to track the progress and retrieve the complete fingerprint output once the operation finishes.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/storage/snaplock/file-fingerprints`#
 
-*Introduced In:* 9.7
+== Introduced in
+
+ONTAP 9.7
+
+== Usage notes
 
 Creates a fingerprint computation session on the file and returns a session-id. This session-id is a unique identifier that you can use to retrieve the progress of an ongoing fingerprint operation. When the operation is complete, you can use the session-id to retrieve the complete fingerprint output for the file .
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-protocols-nvme-services-.html'
+keywords: 'nvme service,nvme retrieval,nvme protocols,svm uuid,nvme command'
 summary: 'Retrieve an NVMe service'
 ---
 
 = Retrieve an NVMe service
+:imagesdir: ./media/
+
+[.lead]
+Accesses information about an NVMe service to understand its current configuration and status. This can help you manage and monitor NVMe services effectively within your environment.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/protocols/nvme/services/{svm.uuid}`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Retrieves an NVMe service.
 
@@ -130,7 +141,7 @@ a|
         "total": 1000,
         "write": 100
       },
-      "timestamp": "2017-01-25 06:20:13 -0500"
+      "timestamp": "2017-01-25 11:20:13 +0000"
     },
     "iops": {
       "read": 200,
@@ -166,14 +177,14 @@ a|
         "total": 1000,
         "write": 100
       },
-      "timestamp": "2017-01-25 06:20:13 -0500"
+      "timestamp": "2017-01-25 11:20:13 +0000"
     },
     "throughput": {
       "read": 200,
       "total": 1000,
       "write": 100
     },
-    "timestamp": "2017-01-25 06:20:13 -0500"
+    "timestamp": "2017-01-25 11:20:13 +0000"
   },
   "statistics": {
     "fc": {
@@ -193,7 +204,7 @@ a|
         "total": 1000,
         "write": 100
       },
-      "timestamp": "2017-01-25 06:20:13 -0500"
+      "timestamp": "2017-01-25 11:20:13 +0000"
     },
     "iops_raw": {
       "read": 200,
@@ -223,14 +234,14 @@ a|
         "total": 1000,
         "write": 100
       },
-      "timestamp": "2017-01-25 06:20:13 -0500"
+      "timestamp": "2017-01-25 11:20:13 +0000"
     },
     "throughput_raw": {
       "read": 200,
       "total": 1000,
       "write": 100
     },
-    "timestamp": "2017-01-25 06:20:13 -0500"
+    "timestamp": "2017-01-25 11:20:13 +0000"
   },
   "svm": {
     "_links": {

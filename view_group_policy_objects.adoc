@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'view_group_policy_objects.html'
+keywords: 'group policy,active directory,ldap queries,gpo version,gpo location,gpo uuid'
 summary: 'View group policy objects'
 ---
 
 = View group policy objects
+:imagesdir: ./media/
 
-
+[.lead]
+Access detailed group policy objects for your SMB server through LDAP queries to the Active Directory server. Retrieve essential GPO information, such as names, versions, and policy set UUIDs, to integrate and manage server policies effectively.
 
 == Overview
 

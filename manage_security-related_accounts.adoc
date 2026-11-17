@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_security-related_accounts.html'
+keywords: 'security management,user accounts,privilege configuration,active directory,role based access'
 summary: 'Manage security-related accounts'
 ---
 
 = Manage security-related accounts
+:imagesdir: ./media/
 
-
+[.lead]
+Manage security-related accounts to define and control access to your cluster and storage virtual machines (SVMs). Create custom user accounts with specific privileges, leveraging local or external authentication sources like NIS, LDAP, or Active Directory. Modify and manage user accounts to maintain secure and efficient cluster operations.
 
 == Overview
 

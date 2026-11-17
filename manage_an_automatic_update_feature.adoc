@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'manage_an_automatic_update_feature.html'
+keywords: 'automatic update,software updates,ontap cluster,update feature,netapp software,update status'
 summary: 'Manage an automatic update feature'
 ---
 
 = Manage an automatic update feature
+:imagesdir: ./media/
 
-
+[.lead]
+Use the Automatic Update feature to keep your ONTAP cluster current with the latest software component updates. Endpoints in this category enable you to manage the configuration and status of automatic updates, ensuring your system remains up-to-date without manual intervention.
 
 == Overview
 

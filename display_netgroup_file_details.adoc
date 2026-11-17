@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'display_netgroup_file_details.html'
+keywords: 'netgroup file,svm netgroup,netgroup details,netgroup delete,netgroup retrieve'
 summary: 'Display netgroup file details'
 ---
 
 = Display netgroup file details
+:imagesdir: ./media/
 
-
+[.lead]
+Use these endpoints to display, retrieve, or delete netgroup file details associated with a Storage Virtual Machine (SVM). Accessing netgroup files helps manage network user groups and permissions effectively.
 
 == Overview
 

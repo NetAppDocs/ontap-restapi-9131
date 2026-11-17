@@ -3,12 +3,15 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'create_and_retrieve_snapshot_copy_policies.html'
+keywords: 'snapshot copy policies,snapshot retention,snapshot schedule,snaplock expiry,snapshot creation'
 summary: 'Create and retrieve Snapshot copy policies'
 ---
 
 = Create and retrieve Snapshot copy policies
+:imagesdir: ./media/
 
-
+[.lead]
+Create and manage Snapshot copy policies to automate scheduled Snapshot copy creation in your ONTAP environment. Use these policies to define schedules, name prefixes, and retention settings for Snapshot copies linked to storage objects.
 
 == Overview
 

@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'get-name-services-cache-unix-user-settings.html'
+keywords: 'unix user,cache settings,negative cache,svm filter,ttl settings'
 summary: 'Retrieve UNIX user cache settings'
 ---
 
 = Retrieve UNIX user cache settings
+:imagesdir: ./media/
+
+[.lead]
+Retrieves UNIX user cache settings to view the current configuration for managing cached user information.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-get]#GET# [.api-doc-code-block]#`/name-services/cache/unix-user/settings`#
 
-*Introduced In:* 9.11
+== Introduced in
+
+ONTAP 9.11
+
+== Usage notes
 
 Retrieves unix-user cache settings.
 

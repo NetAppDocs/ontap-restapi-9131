@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'post-protocols-nvme-subsystems.html'
+keywords: 'nvme subsystem,create nvme,svm nvme,ontap nvme,nvme host,subsystem name'
 summary: 'Create an NVMe subsystem'
 ---
 
 = Create an NVMe subsystem
+:imagesdir: ./media/
+
+[.lead]
+Creates a new NVMe subsystem to manage NVMe storage resources within an existing SVM. This is typically done to configure NVMe storage for specific hosts and workloads.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-post]#POST# [.api-doc-code-block]#`/protocols/nvme/subsystems`#
 
-*Introduced In:* 9.6
+== Introduced in
+
+ONTAP 9.6
+
+== Usage notes
 
 Creates an NVMe subsystem.
 

@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'patch-support-ems-destinations-.html'
+keywords: 'event destination,update destination,destination modify,event notification,certificate parameters,rest api'
 summary: 'Update an event destination'
 ---
 
 = Update an event destination
+:imagesdir: ./media/
+
+[.lead]
+Updates an event destination to modify its configuration, such as the list of filters or certificate parameters, ensuring it meets the requirements for your notification setup.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-patch]#PATCH# [.api-doc-code-block]#`/support/ems/destinations/{name}`#
 
-*Introduced In:* 9.6
+== Introduced in
 
-Updates an event destination.
+ONTAP 9.6
 
 == Recommended optional properties
 

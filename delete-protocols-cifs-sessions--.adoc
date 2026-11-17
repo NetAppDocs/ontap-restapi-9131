@@ -3,14 +3,25 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-cifs-sessions--.html'
+keywords: 'smb session,session delete,smb connection,cifs session,svm node,protocols cifs'
 summary: 'Delete SMB session information for an SVM node'
 ---
 
 = Delete SMB session information for an SVM node
+:imagesdir: ./media/
+
+[.lead]
+Deletes SMB session information on a node for a specific storage virtual machine (SVM). Use this operation to manage and clear SMB sessions as needed for maintaining or troubleshooting SVM node activities.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/cifs/sessions/{node.uuid}/{svm.uuid}/{identifier}/{connection_id}`#
 
-*Introduced In:* 9.9
+== Introduced in
+
+ONTAP 9.9
+
+== Usage notes
 
 Deletes SMB session information on a node for an SVM.
 

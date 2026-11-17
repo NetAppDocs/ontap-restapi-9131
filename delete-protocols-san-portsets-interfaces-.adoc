@@ -3,16 +3,23 @@ sidebar: sidebar
 api: true
 explorer: false
 permalink: 'delete-protocols-san-portsets-interfaces-.html'
+keywords: 'network interface,delete interface,portset removal,san portset,interface uuid'
 summary: 'Delete portset network interfaces'
 ---
 
 = Delete portset network interfaces
+:imagesdir: ./media/
+
+[.lead]
+Deletes a network interface from a portset, removing it from the associated configuration for SAN protocols.
+
+== HTTP method and endpoint
 
 [.api-doc-operation .api-doc-operation-delete]#DELETE# [.api-doc-code-block]#`/protocols/san/portsets/{portset.uuid}/interfaces/{uuid}`#
 
-*Introduced In:* 9.9
+== Introduced in
 
-Deletes a network interface from a portset.
+ONTAP 9.9
 
 == Related ONTAP commands
 
